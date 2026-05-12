@@ -1,289 +1,497 @@
 \documentclass[11pt,a4paper]{report}
 
+% --- Kodierung & Sprache ---
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
-\usepackage[a4paper,margin=2.5cm]{geometry}
+
+% --- Typografie ---
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{parskip}
+
+% --- Layout ---
+\usepackage[a4paper,top=3cm,bottom=3cm,left=2.5cm,right=2.5cm]{geometry}
+
+% --- Tabellen ---
 \usepackage{booktabs}
 \usepackage{longtable}
+\usepackage{tabularx}
 \usepackage{array}
-\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{colortbl}
 
-\title{Angebot: Weiterentwicklung und Pilotierung KIWo 2.0}
+% --- Symbole ---
+\usepackage{amssymb}
+\usepackage{pifont}
+\newcommand{\ja}{\ding{51}}   % Häkchen ✓
+\newcommand{\nein}{–}          % Strich für "nicht enthalten"
+
+% --- Farben ---
+\definecolor{empfohlen}{RGB}{198,231,198}   % Grün-Highlight für Empfohlen-Spalte
+\definecolor{placeholder}{gray}{0.45}
+
+% --- Platzhalter-Befehl (grau, gut sichtbar) ---
+\newcommand{\ph}[1]{\textcolor{placeholder}{\textit{[#1]}}}
+
+% --- Links & PDF-Metadaten ---
+\usepackage{hyperref}
+\hypersetup{
+    pdftitle={Angebot: Weiterentwicklung und Pilotierung KIWo 2.0},
+    pdfauthor={OpenAdvo UG (haftungsbeschränkt)},
+    pdfsubject={Angebot an Universitätsstadt Tübingen},
+    pdfkeywords={KIWo, Tübingen, OpenAdvo, Angebot},
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    citecolor=black
+}
+
+% --- Tabellen-Zeilenabstand ---
+\renewcommand{\arraystretch}{1.35}
+
+% --- Kopf-/Fußzeile ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Angebot KIWo 2.0 – Universitätsstadt Tübingen}
+\fancyhead[R]{\small OpenAdvo UG}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% --- Kapitelformat kompakter ---
+\usepackage{titlesec}
+\titleformat{\chapter}[block]{\Large\bfseries}{Kapitel \thechapter:}{0.5em}{}
+\titlespacing{\chapter}{0pt}{1.5ex}{1ex}
+
+% ============================================================
+\title{%
+  \vspace{-1.5cm}%
+  {\LARGE\bfseries Angebot}\\[0.3em]
+  {\large Weiterentwicklung und Pilotierung KIWo 2.0}
+}
 \author{OpenAdvo UG (haftungsbeschränkt)}
 \date{15.05.2026}
+% ============================================================
 
 \begin{document}
 
 \maketitle
+\thispagestyle{empty}
 
-\noindent\textbf{Auftraggeber:} Universitätsstadt Tübingen\\
-\textbf{Auftragnehmer:} OpenAdvo UG (haftungsbeschränkt)\\
-\textbf{Ansprechpartner:} Leo Reimers (\href{mailto:leo.reimers@openadvo.com}{leo.reimers@openadvo.com}), Franz Schwärzler (\href{mailto:franz.schwaerzler@openadvo.com}{franz.schwaerzler@openadvo.com})
+\bigskip
+\noindent
+\begin{tabular}{@{}ll}
+  \textbf{Auftraggeber:}    & Universitätsstadt Tübingen \\
+  \textbf{Auftragnehmer:}   & OpenAdvo UG (haftungsbeschränkt) \\
+  \textbf{Angebotsdatum:}   & 15.05.2026 \\[0.4em]
+  \textbf{Ansprechpartner:} & Leo Reimers
+    \href{mailto:leo.reimers@openadvo.com}{\texttt{leo.reimers@openadvo.com}} \\
+                            & Franz Schwärzler
+    \href{mailto:franz.schwaerzler@openadvo.com}{\texttt{franz.schwaerzler@openadvo.com}} \\
+\end{tabular}
 
+\vfill
 \tableofcontents
+\newpage
 
+% ============================================================
 \chapter{Anschreiben}
-[Anschreibentext]
+% ============================================================
 
+\ph{Anschreibentext – maximal eine Seite. Persönlicher Ton,
+Anknüpfung an die KIWo-Zusammenarbeit. Kurz nennen: Anlass des
+Angebots, was geboten wird (drei Paketvarianten), Verweis auf die
+folgende Ausarbeitung, Ansprechpartner, Gültigkeit.}
+
+% ============================================================
 \chapter{Management Summary}
-\section{Ausgangssituation in einem Absatz}
-[Kurzfassung]
+% ============================================================
 
-\section{Angebotsgegenstand in einem Absatz}
-[Kurzfassung]
+\section{Ausgangssituation}
+
+\ph{Kurzfassung in einem Absatz}
+
+\section{Angebotsgegenstand}
+
+\ph{Kurzfassung in einem Absatz}
 
 \section{Drei Paketvarianten im Überblick}
-\begin{tabular}{p{0.18\textwidth}p{0.52\textwidth}p{0.18\textwidth}}
-\toprule
-\textbf{Paket} & \textbf{Kurzbeschreibung} & \textbf{Preis (brutto)} \\
-\midrule
-\textbf{Basis} & [eine Zeile] & [Betrag] € \\
-\textbf{Empfohlen} & [eine Zeile] & [Betrag] € \\
-\textbf{Vollausbau} & [eine Zeile] & [Betrag] € \\
-\bottomrule
-\end{tabular}
+
+\begin{tabularx}{\textwidth}{@{} l X r @{}}
+  \toprule
+  \textbf{Paket} & \textbf{Kurzbeschreibung} & \textbf{Preis (brutto)} \\
+  \midrule
+  Basis           & \ph{eine Zeile}  & \ph{Betrag}~€ \\
+  \rowcolor{empfohlen}
+  \textbf{Empfohlen} & \ph{eine Zeile} & \ph{Betrag}~€ \\
+  Vollausbau      & \ph{eine Zeile}  & \ph{Betrag}~€ \\
+  \bottomrule
+\end{tabularx}
 
 \section{Zeitrahmen}
-[z. B. Projektstart, Pilotbetrieb, Abschluss]
 
+\ph{z.\,B. Projektstart, Pilotbetrieb, Abschluss}
+
+% ============================================================
 \chapter{Paketvergleich}
-\begin{tabular}{p{0.45\textwidth}ccc}
-\toprule
-\textbf{Leistungsbestandteil} & \textbf{Basis} & \textbf{Empfohlen} & \textbf{Vollausbau} \\
-\midrule
-[Weiterentwicklungs-Baustein 1] & ✓ & ✓ & ✓ \\
-[Weiterentwicklungs-Baustein 2] &  & ✓ & ✓ \\
-[Weiterentwicklungs-Baustein 3] &  &  & ✓ \\
-[Testumfang / Pilotdauer] & [...] & [...] & [...] \\
-[Evaluation / Reporting] & [...] & [...] & [...] \\
-[Schulung] & [...] & [...] & [...] \\
-[Support während Pilotphase] & [...] & [...] & [...] \\
-\textbf{Einmalige Kosten} & [Betrag] € & [Betrag] € & [Betrag] € \\
-\textbf{Laufende Kosten p. M.} & [Betrag] € & [Betrag] € & [Betrag] € \\
-\bottomrule
-\end{tabular}
+% ============================================================
 
+\begin{tabularx}{\textwidth}{@{} X c >{\columncolor{empfohlen}}c c @{}}
+  \toprule
+  \textbf{Leistungsbestandteil}
+    & \textbf{Basis}
+    & \textbf{Empfohlen}
+    & \textbf{Vollausbau} \\
+  \midrule
+  \ph{Weiterentwicklungs-Baustein 1} & \ja  & \ja  & \ja  \\
+  \ph{Weiterentwicklungs-Baustein 2} & \nein & \ja & \ja  \\
+  \ph{Weiterentwicklungs-Baustein 3} & \nein & \nein & \ja \\
+  \ph{Testumfang / Pilotdauer}       & \ph{} & \ph{} & \ph{} \\
+  \ph{Evaluation / Reporting}        & \ph{} & \ph{} & \ph{} \\
+  \ph{Schulung}                      & \ph{} & \ph{} & \ph{} \\
+  \ph{Support während Pilotphase}    & \ph{} & \ph{} & \ph{} \\
+  \midrule
+  \textbf{Einmalige Kosten}          & \ph{Betrag}~€ & \ph{Betrag}~€ & \ph{Betrag}~€ \\
+  \textbf{Laufende Kosten p.\,M.}    & \ph{Betrag}~€ & \ph{Betrag}~€ & \ph{Betrag}~€ \\
+  \bottomrule
+\end{tabularx}
+
+% ============================================================
 \chapter{Ausgangslage und Anschluss an KIWo}
+% ============================================================
+
 \section{Rückblick: Was im Tech Fellowship erreicht wurde}
-[Text]
+
+\ph{Kurze Würdigung des Bestehenden. Schafft gemeinsamen Bezugsrahmen.}
 
 \section{Erkenntnisse aus dem Pilotbetrieb}
-[Text]
+
+\ph{Was hat sich bewährt, wo gibt es Weiterentwicklungsbedarf.}
 
 \section{Motivation und Zielsetzung der Weiterentwicklung}
-[Text]
 
+\ph{Text}
+
+% ============================================================
 \chapter{Zielbild und Scope der Weiterentwicklung}
-\section{Übergeordnete Ziele}
-[Text]
+% ============================================================
 
-\section{Weiterentwicklungsbausteine (paketunabhängige Gesamtliste)}
+\section{Übergeordnete Ziele}
+
+\ph{Text}
+
+\section{Weiterentwicklungsbausteine}
+
 \begin{itemize}
-    \item \textbf{Baustein A – [Name]:} [Beschreibung, Nutzen, Akzeptanzkriterien]
-    \item \textbf{Baustein B – [Name]:} [Beschreibung, Nutzen, Akzeptanzkriterien]
-    \item \textbf{Baustein C – [Name]:} [Beschreibung, Nutzen, Akzeptanzkriterien]
-    \item \textbf{Baustein D – [Name]:} [Beschreibung, Nutzen, Akzeptanzkriterien]
+  \item \textbf{Baustein A – \ph{Name}:} \ph{Beschreibung, Nutzen, Akzeptanzkriterien}
+  \item \textbf{Baustein B – \ph{Name}:} \ph{Beschreibung, Nutzen, Akzeptanzkriterien}
+  \item \textbf{Baustein C – \ph{Name}:} \ph{Beschreibung, Nutzen, Akzeptanzkriterien}
+  \item \textbf{Baustein D – \ph{Name}:} \ph{Beschreibung, Nutzen, Akzeptanzkriterien}
 \end{itemize}
 
 \section{Test- und Validierungsziele}
+
 \begin{itemize}
-    \item \textbf{Hypothese 1:} [Text] – Metrik: [...]
-    \item \textbf{Hypothese 2:} [Text] – Metrik: [...]
+  \item \textbf{Hypothese 1:} \ph{Text} – Metrik: \ph{Metrik}
+  \item \textbf{Hypothese 2:} \ph{Text} – Metrik: \ph{Metrik}
 \end{itemize}
 
 \section{Abgrenzung – nicht Bestandteil}
-[Aufzählung]
 
+\ph{Aufzählung der bewussten Ausschlüsse}
+
+% ============================================================
 \chapter{Leistungsbeschreibung je Paket}
-\section{Paket Basis}
-\textbf{Enthaltene Bausteine:} A\\
-\textbf{Testumfang:} [reduziert]\\
-\textbf{Erprobungsphase:} [verkürzt]\\
-\textbf{Reporting:} [Standard]
+% ============================================================
 
-[Detailbeschreibung]
+\section{Paket Basis}
+
+\begin{tabular}{@{} l l @{}}
+  \textbf{Enthaltene Bausteine:} & A \\
+  \textbf{Testumfang:}           & \ph{reduziert} \\
+  \textbf{Erprobungsphase:}      & \ph{verkürzt} \\
+  \textbf{Reporting:}            & \ph{Standard} \\
+\end{tabular}
+
+\medskip
+\ph{Detailbeschreibung}
 
 \section{Paket Empfohlen}
-\textbf{Enthaltene Bausteine:} A, B, C\\
-\textbf{Testumfang:} [vollständig]\\
-\textbf{Erprobungsphase:} [regulär]\\
-\textbf{Reporting:} [erweitert]
 
-[Detailbeschreibung]
+\begin{tabular}{@{} l l @{}}
+  \textbf{Enthaltene Bausteine:} & A, B, C \\
+  \textbf{Testumfang:}           & \ph{vollständig} \\
+  \textbf{Erprobungsphase:}      & \ph{regulär} \\
+  \textbf{Reporting:}            & \ph{erweitert} \\
+\end{tabular}
+
+\medskip
+\ph{Detailbeschreibung}
 
 \section{Paket Vollausbau}
-\textbf{Enthaltene Bausteine:} A, B, C, D\\
-\textbf{Testumfang:} [maximal]\\
-\textbf{Erprobungsphase:} [verlängert]\\
-\textbf{Reporting:} [umfassend inkl. Übertragbarkeitsanalyse]
 
-[Detailbeschreibung]
+\begin{tabular}{@{} l l @{}}
+  \textbf{Enthaltene Bausteine:} & A, B, C, D \\
+  \textbf{Testumfang:}           & \ph{maximal} \\
+  \textbf{Erprobungsphase:}      & \ph{verlängert} \\
+  \textbf{Reporting:}            & \ph{umfassend inkl. Übertragbarkeitsanalyse} \\
+\end{tabular}
+
+\medskip
+\ph{Detailbeschreibung}
 
 \section{Dokumentations- und Ergebnislieferungen}
-[Tabelle oder Liste der Deliverables je Paket]
 
+\ph{Tabelle oder Liste der Deliverables je Paket}
+
+% ============================================================
 \chapter{Vorgehen und Projektplan}
+% ============================================================
+
 \section{Vorgehensmodell}
-[Text – V-Modell XT, Projekttypvariante "AN-Projekt mit Weiterentwicklung"]
+
+\ph{V-Modell XT, Projekttypvariante „AN-Projekt mit Weiterentwicklung"}
 
 \section{Projektphasen und Meilensteine}
-\begin{tabular}{p{0.08\textwidth}p{0.25\textwidth}p{0.42\textwidth}p{0.15\textwidth}}
-\toprule
-\textbf{Phase} & \textbf{Bezeichnung} & \textbf{Inhalt} & \textbf{Dauer} \\
-\midrule
-1 & [...] & [...] & [...] \\
-2 & [...] & [...] & [...] \\
-3 & [...] & [...] & [...] \\
-4 & [...] & [...] & [...] \\
-\bottomrule
-\end{tabular}
+
+\begin{tabularx}{\textwidth}{@{} l l X l @{}}
+  \toprule
+  \textbf{Phase} & \textbf{Bezeichnung} & \textbf{Inhalt} & \textbf{Dauer} \\
+  \midrule
+  1 & \ph{Name} & \ph{Inhalt} & \ph{Dauer} \\
+  2 & \ph{Name} & \ph{Inhalt} & \ph{Dauer} \\
+  3 & \ph{Name} & \ph{Inhalt} & \ph{Dauer} \\
+  4 & \ph{Name} & \ph{Inhalt} & \ph{Dauer} \\
+  \bottomrule
+\end{tabularx}
 
 \section{Qualitätssicherung und Entscheidungspunkte}
-[Text und Tabelle]
+
+\ph{Text und Tabelle}
 
 \section{Risiken und Gegenmaßnahmen}
-\begin{tabular}{p{0.25\textwidth}p{0.2\textwidth}p{0.2\textwidth}p{0.25\textwidth}}
-\toprule
-\textbf{Risiko} & \textbf{Wahrscheinlichkeit} & \textbf{Auswirkung} & \textbf{Gegenmaßnahme} \\
-\midrule
-[...] & [...] & [...] & [...] \\
-\bottomrule
-\end{tabular}
 
+\begin{tabularx}{\textwidth}{@{} l l l X @{}}
+  \toprule
+  \textbf{Risiko} & \textbf{Wahr\-schein\-lich\-keit} & \textbf{Auswirkung} & \textbf{Gegenmaßnahme} \\
+  \midrule
+  \ph{Risiko} & \ph{} & \ph{} & \ph{Maßnahme} \\
+  \bottomrule
+\end{tabularx}
+
+% ============================================================
 \chapter{Projektorganisation}
+% ============================================================
+
 \section{Rollen und Besetzung OpenAdvo}
-[Text – wer macht was]
+
+\ph{Wer macht was}
 
 \section{Erwartete Mitwirkung der Stadt Tübingen}
-[Text]
+
+\ph{Realistisch benennen – schafft Erwartungstransparenz}
 
 \section{Kommunikation und Eskalation}
-[Text – Jour Fixe, Kanäle, Eskalationspfad]
+
+\ph{Jour Fixe, Kanäle, Eskalationspfad}
 
 \section{Ansprechpartner}
-[Tabelle beider Seiten]
 
+\begin{tabularx}{\textwidth}{@{} l l X @{}}
+  \toprule
+  \textbf{Seite} & \textbf{Person} & \textbf{Rolle / Kontakt} \\
+  \midrule
+  OpenAdvo & Leo Reimers       & \href{mailto:leo.reimers@openadvo.com}{\texttt{leo.reimers@openadvo.com}} \\
+  OpenAdvo & Franz Schwärzler  & \href{mailto:franz.schwaerzler@openadvo.com}{\texttt{franz.schwaerzler@openadvo.com}} \\
+  Tübingen & \ph{Name}         & \ph{Rolle, E-Mail} \\
+  \bottomrule
+\end{tabularx}
+
+% ============================================================
 \chapter{Technische und betriebliche Rahmenbedingungen}
+% ============================================================
+
 \section{Architekturüberblick}
-[Kurz, mit Verweis auf KIWo-Produktbeschreibung als Anlage. Delta für Weiterentwicklung beschreiben.]
+
+\ph{Kurz, mit Verweis auf KIWo-Produktbeschreibung (Anlage 1).
+Delta für Weiterentwicklung beschreiben.}
 
 \section{Betrieb und Hosting}
-[IONOS, EU-Rechenzentrum, Self-Hosted DB]
+
+Hosting erfolgt bei IONOS SE in einem EU-Rechenzentrum (Frankfurt/Berlin)
+mit Self-Hosted-Datenbank. \ph{Details ergänzen.}
 
 \section{Datenschutz}
-[Verweis auf bestehenden AVV, ggf. Anpassungsbedarf für neue Verarbeitungen]
+
+Verweis auf bestehenden Auftragsverarbeitungsvertrag (AVV) aus KIWo.
+\ph{Anpassungsbedarf für neue Verarbeitungen beschreiben.}
 
 \section{IT-Sicherheit und TOM}
-[Verweis auf bestehende Dokumentation, Delta beschreiben]
 
-\section{KI-Verordnung (EU)}
-[Einstufung "begrenztes Risiko", Transparenzpflichten]
+\ph{Verweis auf bestehende Dokumentation, Delta für KIWo 2.0 beschreiben.}
+
+\section{KI-Verordnung (EU AI Act)}
+
+Die Lösung ist als System mit \textit{begrenztem Risiko} einzustufen.
+Es gelten die Transparenzpflichten nach Art.\,52 EU-KI-VO.
 
 \section{Barrierefreiheit (BITV 2.0)}
-[Text]
+
+\ph{Text}
 
 \section{Zertifizierungen der Unterauftragnehmer}
-[Verweis auf Anlage]
 
+Siehe Anlage 2 (Zertifizierungsübersicht).
+
+% ============================================================
 \chapter{Preisangebot}
+% ============================================================
+
 \section{Preislogik und Erläuterung}
-[Text – z. B. Aufteilung Personal / Hosting / KI-Modell / Compliance]
+
+\ph{Transparent machen, wie sich der Preis zusammensetzt –
+z.\,B. Aufteilung Personal / Hosting / KI-Modell / Compliance.}
 
 \section{Einmalige Leistungen je Paket}
-\begin{tabular}{p{0.43\textwidth}rrr}
-\toprule
-\textbf{Position} & \textbf{Basis} & \textbf{Empfohlen} & \textbf{Vollausbau} \\
-\midrule
-Personalkosten Entwicklung & [€] & [€] & [€] \\
-Externe Prüfungen / Assessments & [€] & [€] & [€] \\
-Schulung und Übergabe & [€] & [€] & [€] \\
-\textbf{Summe einmalig (brutto)} & \textbf{[€]} & \textbf{[€]} & \textbf{[€]} \\
-\bottomrule
-\end{tabular}
+
+\begin{tabularx}{\textwidth}{@{} X r r r @{}}
+  \toprule
+  \textbf{Position}
+    & \textbf{Basis}
+    & \textbf{Empfohlen}
+    & \textbf{Vollausbau} \\
+  \midrule
+  Personalkosten Entwicklung        & \ph{€} & \ph{€} & \ph{€} \\
+  Externe Prüfungen / Assessments   & \ph{€} & \ph{€} & \ph{€} \\
+  Schulung und Übergabe             & \ph{€} & \ph{€} & \ph{€} \\
+  \midrule
+  \textbf{Summe einmalig (brutto)}  & \textbf{\ph{€}} & \textbf{\ph{€}} & \textbf{\ph{€}} \\
+  \bottomrule
+\end{tabularx}
 
 \section{Laufende Leistungen je Paket (monatlich)}
-\begin{tabular}{p{0.43\textwidth}rrr}
-\toprule
-\textbf{Position} & \textbf{Basis} & \textbf{Empfohlen} & \textbf{Vollausbau} \\
-\midrule
-Personalkosten Regelbetrieb & [€] & [€] & [€] \\
-Cloud Hosting (IONOS) & [€] & [€] & [€] \\
-KI-Modell-Nutzung (Mistral) & [€] & [€] & [€] \\
-Datenschutz und Informationssicherheit & [€] & [€] & [€] \\
-\textbf{Summe laufend p. M. (brutto)} & \textbf{[€]} & \textbf{[€]} & \textbf{[€]} \\
-\bottomrule
-\end{tabular}
+
+\begin{tabularx}{\textwidth}{@{} X r r r @{}}
+  \toprule
+  \textbf{Position}
+    & \textbf{Basis}
+    & \textbf{Empfohlen}
+    & \textbf{Vollausbau} \\
+  \midrule
+  Personalkosten Regelbetrieb               & \ph{€} & \ph{€} & \ph{€} \\
+  Cloud-Hosting (IONOS SE)                  & \ph{€} & \ph{€} & \ph{€} \\
+  KI-Modell-Nutzung (Mistral AI)            & \ph{€} & \ph{€} & \ph{€} \\
+  Datenschutz und Informationssicherheit    & \ph{€} & \ph{€} & \ph{€} \\
+  \midrule
+  \textbf{Summe laufend p.\,M. (brutto)}   & \textbf{\ph{€}} & \textbf{\ph{€}} & \textbf{\ph{€}} \\
+  \bottomrule
+\end{tabularx}
 
 \section{Gesamtpreis über Vertragslaufzeit}
-\begin{tabular}{p{0.2\textwidth}rrr}
-\toprule
-\textbf{Paket} & \textbf{Einmalig} & \textbf{Laufend × [n] Monate} & \textbf{Gesamt} \\
-\midrule
-Basis & [€] & [€] & \textbf{[€]} \\
-Empfohlen & [€] & [€] & \textbf{[€]} \\
-Vollausbau & [€] & [€] & \textbf{[€]} \\
-\bottomrule
-\end{tabular}
+
+\begin{tabularx}{\textwidth}{@{} l r r r @{}}
+  \toprule
+  \textbf{Paket}
+    & \textbf{Einmalig}
+    & \textbf{Laufend $\times$ \ph{n} Monate}
+    & \textbf{Gesamt} \\
+  \midrule
+  Basis      & \ph{€} & \ph{€} & \textbf{\ph{€}} \\
+  \rowcolor{empfohlen}
+  Empfohlen  & \ph{€} & \ph{€} & \textbf{\ph{€}} \\
+  Vollausbau & \ph{€} & \ph{€} & \textbf{\ph{€}} \\
+  \bottomrule
+\end{tabularx}
 
 \section{Optionale Zusatzleistungen}
-[Liste mit Preisen]
+
+\ph{Liste mit Preisen – bewusst außerhalb der Paketlogik.
+Kann bei Bedarf nachbeauftragt werden.}
 
 \section{Zahlungsbedingungen und Preisbindung}
-[Text]
 
+\ph{Text – z.\,B. Zahlungsziel 30 Tage, Preisbindung bis TT.MM.JJJJ.}
+
+% ============================================================
 \chapter{Vertragliche Rahmenbedingungen}
+% ============================================================
+
 \section{Vertragslaufzeit und Kündigung}
-[Text]
+
+\ph{Text}
 
 \section{Gewährleistung und Service-Level}
-[Text]
+
+\ph{Text}
 
 \section{Auftragsverarbeitungsvertrag}
-[Text]
+
+Verweis auf bestehende AVV-Vorlage aus dem KIWo-Projekt (Anlage 3).
+\ph{Anpassungsbedarf für neue Verarbeitungen beschreiben.}
 
 \section{Nutzungsrechte und Lizenzen}
-[Text]
+
+\ph{Text}
 
 \section{Geltende Vertragsbedingungen}
-[Text]
 
+\ph{z.\,B. EVB-IT Dienstleistung, EVB-IT Cloud oder eigene AGB.}
+
+% ============================================================
 \chapter{Über OpenAdvo}
+% ============================================================
+
 \section{Unternehmensprofil}
-[Kurz]
+
+\ph{Kurzbeschreibung OpenAdvo UG}
 
 \section{Team und Qualifikationen}
-[Text]
+
+\ph{Text – wer ist dabei, welche Erfahrung}
 
 \section{Referenzen}
+
 \begin{itemize}
-    \item \textbf{KIWo (Universitätsstadt Tübingen, Tech Fellowship 2024/2025):} [Beschreibung]
-    \item [weitere Referenzen]
+  \item \textbf{KIWo (Universitätsstadt Tübingen, Tech Fellowship 2024/2025):}
+    \ph{Beschreibung – stärkste Referenz, prominent platzieren.}
+  \item \ph{Weitere Referenzen}
 \end{itemize}
 
 \section{Unterauftragnehmer}
-\begin{tabular}{p{0.23\textwidth}p{0.3\textwidth}p{0.35\textwidth}}
-\toprule
-\textbf{Unterauftragnehmer} & \textbf{Leistung} & \textbf{Zertifizierungen} \\
-\midrule
-IONOS SE & Cloud-Infrastruktur & ISO 27001, BSI C5, DSGVO \\
-Mistral AI & KI-Modelle (LLM-API) & SOC 2 Type II, ISO 27001 \\
-DSN Group & Datenschutz, IT-Sicherheit, Audits & ISO 27001, IT-Grundschutz \\
-[ggf. weitere] &  &  \\
-\bottomrule
-\end{tabular}
 
+\begin{tabularx}{\textwidth}{@{} l l X @{}}
+  \toprule
+  \textbf{Unterauftragnehmer} & \textbf{Leistung} & \textbf{Zertifizierungen} \\
+  \midrule
+  IONOS SE    & Cloud-Infrastruktur              & ISO 27001, BSI C5, DSGVO \\
+  Mistral AI  & KI-Modelle (LLM-API)             & SOC 2 Type II, ISO 27001 \\
+  DSN Group   & Datenschutz, IT-Sicherheit, Audits & ISO 27001, IT-Grundschutz \\
+  \ph{ggf. weitere} & \ph{Leistung} & \ph{Zertifizierungen} \\
+  \bottomrule
+\end{tabularx}
+
+% ============================================================
 \chapter{Anlagen}
-\begin{itemize}
-    \item Anlage 1: Produktbeschreibung KIWo 2.0 (bestehende Lösung)
-    \item Anlage 2: Zertifizierungsübersicht Unterauftragnehmer
-    \item Anlage 3: AVV-Vorlage
-    \item Anlage 4: [ggf. Projektplan in Detailansicht]
-    \item Anlage 5: [ggf. weitere]
-\end{itemize}
+% ============================================================
 
+\begin{enumerate}
+  \item Produktbeschreibung KIWo 2.0 (bestehende Lösung)
+  \item Zertifizierungsübersicht Unterauftragnehmer
+  \item AVV-Vorlage
+  \item \ph{Projektplan in Detailansicht}
+  \item \ph{Weitere Anlagen}
+\end{enumerate}
+
+% --- Unterschrift ---
 \vfill
-\noindent Köln, den [TT.MM.JJJJ]\\
-Simon Ebeling, CEO OpenAdvo UG
+\noindent
+Köln, den 15.05.2026
+
+\bigskip\bigskip
+\noindent
+\rule{6cm}{0.4pt}\\
+Simon Ebeling\\
+CEO, OpenAdvo UG (haftungsbeschränkt)
 
 \end{document}
