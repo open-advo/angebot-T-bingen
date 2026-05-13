@@ -24,7 +24,7 @@ _Zusätzlich zum gemeinsamen Leistungsumfang:_
 
 **Gesamtpreis: 68.302,00 € brutto**
 
-## 4.3 Variante Konsolidierung ⭐
+## 4.3 Variante Konsolidierung
 
 _Zusätzlich zum gemeinsamen Leistungsumfang:_
 
