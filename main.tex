@@ -4,14 +4,17 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
+\usepackage{csquotes}
 
 % --- Typografie ---
 \usepackage{lmodern}
 \usepackage{microtype}
 \usepackage{parskip}
+\usepackage{setspace}
+\setstretch{1.15}
 
 % --- Layout ---
-\usepackage[a4paper,top=3cm,bottom=3cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage[a4paper,top=3cm,bottom=3cm,left=2.8cm,right=2.8cm]{geometry}
 
 % --- Tabellen ---
 \usepackage{booktabs}
@@ -20,135 +23,202 @@
 \usepackage{array}
 \usepackage{xcolor}
 \usepackage{colortbl}
+\renewcommand{\arraystretch}{1.4}
+
+% --- Listen ---
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=1.6em, itemsep=3pt, topsep=4pt, parsep=0pt}
+\setlist[enumerate]{leftmargin=1.6em, itemsep=3pt, topsep=4pt, parsep=0pt}
 
 % --- Symbole ---
 \usepackage{amssymb}
 \usepackage{pifont}
-\newcommand{\ja}{\ding{51}}   % Häkchen ✓
-\newcommand{\nein}{–}          % Strich für "nicht enthalten"
+\newcommand{\ja}{\ding{51}}
+\newcommand{\nein}{--}
 
 % --- Farben ---
-\definecolor{empfohlen}{RGB}{198,231,198}   % Grün-Highlight für Empfohlen-Spalte
+\definecolor{konsolidierung}{RGB}{198,231,198}
 \definecolor{placeholder}{gray}{0.45}
+\definecolor{rulecolor}{RGB}{60,90,140}
+\definecolor{tabhead}{RGB}{230,237,248}
 
-% --- Platzhalter-Befehl (grau, kursiv, gut sichtbar) ---
+% --- Platzhalter ---
 \newcommand{\ph}[1]{\textcolor{placeholder}{\textit{[#1]}}}
 
 % --- Links & PDF-Metadaten ---
 \usepackage{hyperref}
 \hypersetup{
     pdftitle={Angebot: Weiterentwicklung und Pilotierung KIWo 2.0},
-    pdfauthor={OpenAdvo UG (haftungsbeschränkt)},
-    pdfsubject={Angebot an Universitätsstadt Tübingen},
-    pdfkeywords={KIWo, Tübingen, OpenAdvo, Angebot},
+    pdfauthor={OpenAdvo UG (haftungsbeschr\"ankt)},
+    pdfsubject={Angebot an Universit\"atsstadt T\"ubingen},
+    pdfkeywords={KIWo, T\"ubingen, OpenAdvo, Angebot},
     colorlinks=true,
     linkcolor=black,
     urlcolor=blue,
     citecolor=black
 }
 
-% --- Tabellen-Zeilenabstand ---
-\renewcommand{\arraystretch}{1.35}
-
-% --- Kopf-/Fußzeile ---
+% --- Kopf-/Fu\ss{}zeile ---
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\small Angebot KIWo 2.0 – Universitätsstadt Tübingen}
-\fancyhead[R]{\small OpenAdvo UG}
-\fancyfoot[C]{\thepage}
-\renewcommand{\headrulewidth}{0.4pt}
+\fancyhead[L]{\small\textit{Angebot KIWo 2.0 -- Universit\"atsstadt T\"ubingen}}
+\fancyhead[R]{\small\textit{OpenAdvo UG (haftungsbeschr\"ankt)}}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0pt}
 
-% --- Kapitelformat ---
+% --- Kapitel- und Abschnittsformat ---
 \usepackage{titlesec}
-\titleformat{\chapter}[block]{\Large\bfseries}{Kapitel \thechapter:}{0.5em}{}
-\titlespacing{\chapter}{0pt}{1.5ex}{1ex}
+\titleformat{\chapter}[block]
+  {\large\bfseries\color{rulecolor}}
+  {\thechapter}{0.6em}{}[\vspace{2pt}\titlerule]
+\titlespacing{\chapter}{0pt}{2ex}{2ex}
+
+\titleformat{\section}{\normalsize\bfseries}{\thesection}{0.5em}{}
+\titlespacing{\section}{0pt}{1.5ex}{0.5ex}
+
+\titleformat{\subsection}{\normalsize\bfseries\itshape}{\thesubsection}{0.5em}{}
+\titlespacing{\subsection}{0pt}{1ex}{0.3ex}
+
+\titleformat{\paragraph}[runin]{\normalfont\bfseries}{}{0em}{}[:]
+\titlespacing{\paragraph}{0pt}{0.6ex}{0.4em}
+
+% --- Tabellenkopf-Befehl ---
+\newcommand{\tblhead}[1]{\cellcolor{tabhead}\textbf{#1}}
 
 % ============================================================
-\title{%
-  \vspace{-1.5cm}%
-  {\LARGE\bfseries Angebot}\\[0.3em]
-  {\large Weiterentwicklung und Pilotierung KIWo 2.0}
-}
-\author{OpenAdvo UG (haftungsbeschränkt)}
-\date{15.05.2026}
-% ============================================================
-
 \begin{document}
+% ============================================================
 
-\maketitle
+\begin{titlepage}
 \thispagestyle{empty}
 
-\bigskip
-\noindent
-\begin{tabular}{@{}ll}
-  \textbf{Auftraggeber:}    & Universitätsstadt Tübingen \\
-  \textbf{Auftragnehmer:}   & OpenAdvo UG (haftungsbeschränkt) \\
-  \textbf{Angebotsdatum:}   & 15.05.2026 \\[0.4em]
-  \textbf{Ansprechpartner:} & Leo Reimers
-    \href{mailto:leo.reimers@openadvo.com}{\texttt{leo.reimers@openadvo.com}} \\
-                            & Franz Schwärzler
-    \href{mailto:franz.schwaerzler@openadvo.com}{\texttt{franz.schwaerzler@openadvo.com}} \\
-\end{tabular}
+\vspace*{1cm}
+{\color{rulecolor}\rule{\textwidth}{2pt}}
+\vspace{0.6cm}
+
+{\LARGE\bfseries Angebot}\\[0.4em]
+{\large Weiterentwicklung und Pilotierung KIWo 2.0}
+
+\vspace{0.6cm}
+{\color{rulecolor}\rule{\textwidth}{0.6pt}}
+\vspace{1.2cm}
+
+\begin{tabularx}{\textwidth}{@{} l X @{}}
+  \textbf{Auftraggeber}      & Universit\"atsstadt T\"ubingen \\[0.4em]
+  \textbf{Auftragnehmer}     & OpenAdvo UG (haftungsbeschr\"ankt) \\
+                             & Weyertal 109, 50931 K\"oln \\
+                             & Handelsregister: HRB \ph{Nummer}, Amtsgericht \ph{Registergericht} \\
+                             & USt-IdNr.: \ph{USt-IdNr.} \\
+                             & Gesch\"aftsf\"uhrung: Simon Ebeling \\[0.4em]
+  \textbf{Angebotsdatum}     & 18.05.2026 \\[0.2em]
+  \textbf{G\"ultigkeit}        & 30 Tage ab Angebotsdatum \\[0.4em]
+  \textbf{Ansprechpartner}   & Franz Schw\"arzler -- kaufm\"annisch \& vertraglich \\
+                             & \href{mailto:franz.schwaerzler@openadvo.com}{\texttt{franz.schwaerzler@openadvo.com}} \\[0.2em]
+                             & Leo Reimers -- Projektleitung KIWo 2.0 \\
+                             & \href{mailto:leo.reimers@openadvo.com}{\texttt{leo.reimers@openadvo.com}} \\
+\end{tabularx}
 
 \vfill
+{\color{rulecolor}\rule{\textwidth}{0.6pt}}
+\end{titlepage}
+
 \tableofcontents
 \newpage
 
-% ============================================================
-% Kapitel 1 & 2: direkt in main.tex
-% ============================================================
+% Kapitel 1 & 2 direkt in main.tex
 
 \chapter{Anschreiben}
 
-\ph{Anschreibentext – maximal eine Seite. Persönlicher Ton,
-Anknüpfung an die KIWo-Zusammenarbeit. Kurz nennen: Anlass des
-Angebots, was geboten wird (drei Paketvarianten), Verweis auf die
-folgende Ausarbeitung, Ansprechpartner, Gültigkeit.}
+Sehr geehrte Damen und Herren,
 
-% ============================================================
+im Rahmen des Tech Fellowships 2025/2026 wurde KIWo gemeinsam mit der
+Universit\"atsstadt T\"ubingen entwickelt und erfolgreich pilotiert. Aufbauend
+auf den Erkenntnissen dieser Zusammenarbeit unterbreiten wir Ihnen hiermit
+ein Angebot zur Weiterentwicklung und strukturierten Pilotierung von KIWo~2.0.
+
+Das Angebot umfasst drei Leistungsvarianten, die sich im Funktionsumfang, im
+Umfang des Testbetriebs sowie in der Begleitung vor Ort unterscheiden. Damit
+wird der Universit\"atsstadt T\"ubingen die M\"oglichkeit gegeben, den
+Leistungsumfang an die organisatorischen und haush\"alterischen
+Rahmenbedingungen anzupassen, ohne den fachlichen Kerngedanken des Vorhabens
+zu ver\"andern.
+
+Ein Projektstart zum 1.~Juli 2026 ist nach derzeitigem Planungsstand
+realisierbar. F\"ur die Projektabwicklung steht Ihnen Leo Reimers als
+Ansprechpartner zur Verf\"ugung; f\"ur kaufm\"annische und vertragliche R\"uckfragen
+wenden Sie sich bitte an Franz Schw\"arzler. Das Angebot ist 30 Tage ab
+Angebotsdatum g\"ultig.
+
+Wir freuen uns auf die Fortsetzung der vertrauensvollen Zusammenarbeit.
+
+\bigskip
+\noindent
+Mit freundlichen Gr\"u\ss{}en
+
+\bigskip\bigskip
+\noindent
+\rule{5cm}{0.4pt}\\
+Franz Schw\"arzler\\
+OpenAdvo UG (haftungsbeschr\"ankt)
 
 \chapter{Management Summary}
 
-\section{Ausgangssituation}
-
-\ph{Kurzfassung in einem Absatz}
-
 \section{Angebotsgegenstand}
 
-\ph{Kurzfassung in einem Absatz}
+Gegenstand des Angebots ist die Weiterentwicklung und strukturierte
+Pilotierung von KIWo, einer KI-gest\"utzten L\"osung zur digitalen Unterst\"utzung
+des Wohngeldantragsprozesses. Auftragnehmer ist die OpenAdvo UG
+(haftungsbeschr\"ankt). Das Vorhaben kn\"upft unmittelbar an die im Tech
+Fellowship 2025/2026 erprobte L\"osung an und \"uberf\"uhrt diese in einen
+erweiterten Funktionsumfang sowie einen begleiteten Testbetrieb unter realen
+Verwaltungsbedingungen. Ziel ist es, belastbare Erkenntnisse zu Nutzen,
+Skalierbarkeit und \"Ubertragbarkeit zu gewinnen und KIWo f\"ur den dauerhaften
+Einsatz in der Universit\"atsstadt T\"ubingen vorzubereiten.
 
-\section{Drei Paketvarianten im Überblick}
+\section{Leistungsvarianten im \"Uberblick}
 
 \begin{tabularx}{\textwidth}{@{} l X r @{}}
   \toprule
-  \textbf{Paket} & \textbf{Kurzbeschreibung} & \textbf{Preis (brutto)} \\
+  \tblhead{Variante} & \tblhead{Kurzbeschreibung} & \tblhead{Gesamtpreis (brutto)} \\
   \midrule
-  Basis           & \ph{eine Zeile}  & \ph{Betrag}~€ \\
-  \rowcolor{empfohlen}
-  \textbf{Empfohlen} & \ph{eine Zeile} & \ph{Betrag}~€ \\
-  Vollausbau      & \ph{eine Zeile}  & \ph{Betrag}~€ \\
+  Transformation
+    & Umfassende Weiterentwicklung mit zweimonatigem Testbetrieb
+      und regelm\"a\ss{}iger Begleitung vor Ort
+    & 68.302{,}00~\texteuro{} \\
+  \rowcolor{konsolidierung}
+  \textbf{Konsolidierung}
+    & Weiterentwicklung mit einmonatigem Testbetrieb
+      und punktueller Begleitung vor Ort
+    & \textbf{54.611{,}00~\texteuro{}} \\
+  Fundament
+    & Weiterentwicklung mit einmonatigem Testbetrieb;
+      einzelne Funktionsbestandteile werden optional vorgesehen
+    & 49.573{,}00~\texteuro{} \\
   \bottomrule
 \end{tabularx}
 
+\medskip
+Die ausf\"uhrliche Beschreibung der enthaltenen Leistungen findet sich in
+Kapitel~4.
+
 \section{Zeitrahmen}
 
-\ph{z.\,B. Projektstart, Pilotbetrieb, Abschluss}
+Ein Projektstart zum 1.~Juli 2026 ist nach derzeitigem Planungsstand
+realisierbar. Die Gesamtlaufzeit betr\"agt rund sechs Monate und gliedert sich
+in eine Konzeptions- und Umsetzungsphase, eine Test- und Pilotbetriebsphase
+sowie eine abschlie\ss{}ende Evaluations- und Abschlussphase. Die konkrete
+Ausgestaltung der Phasen ergibt sich aus der gew\"ahlten Variante und wird zu
+Projektbeginn gemeinsam mit der Universit\"atsstadt T\"ubingen festgelegt.
 
-% ============================================================
-% Kapitel 3–13: je eigene Datei in kapitel/
-% ============================================================
+% Kapitel 3-7 und Anhang
 
-\input{kapitel/03_paketvergleich}
-\input{kapitel/04_ausgangslage}
-\input{kapitel/05_zielbild}
-\input{kapitel/06_leistungsbeschreibung}
-\input{kapitel/07_vorgehen}
-\input{kapitel/08_projektorganisation}
-\input{kapitel/09_technik}
-\input{kapitel/10_preisangebot}
-\input{kapitel/11_vertrag}
-\input{kapitel/12_ueber_openadvo}
-\input{kapitel/13_anlagen}
+\input{kapitel/03_ausgangslage}
+\input{kapitel/04_leistungsbeschreibung}
+\input{kapitel/05_vorgehen}
+\input{kapitel/06_preise}
+\input{kapitel/07_openadvo}
+\input{kapitel/anhang}
 
 \end{document}
