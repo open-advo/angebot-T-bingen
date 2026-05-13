@@ -58,7 +58,7 @@ Gegenstand des Angebots ist die Weiterentwicklung und strukturierte Pilotierung 
 | Variante | Kurzbeschreibung | Gesamtpreis (brutto) |
 |---|---|---:|
 | Transformation | Umfassende Weiterentwicklung mit zweimonatigem Testbetrieb und regelmäßiger Begleitung vor Ort | 68.302,00 € |
-| **Konsolidierung** ⭐ | Weiterentwicklung mit einmonatigem Testbetrieb und punktueller Begleitung vor Ort | **54.611,00 €** |
+| Konsolidierung | Weiterentwicklung mit einmonatigem Testbetrieb und punktueller Begleitung vor Ort | 54.611,00 € |
 | Fundament | Weiterentwicklung mit einmonatigem Testbetrieb; einzelne Funktionsbestandteile optional | 49.573,00 € |
 
 ### 2.3 Zeitrahmen
