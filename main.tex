@@ -15,7 +15,7 @@
 \setstretch{1.18}
 
 % --- Layout ---
-\usepackage[a4paper,top=3.2cm,bottom=3.2cm,left=3cm,right=3cm,headheight=22pt]{geometry}
+\usepackage[a4paper,top=3.8cm,bottom=3.2cm,left=3cm,right=3cm,headheight=1.2cm,headsep=0.6cm]{geometry}
 
 % --- Seitenumbrüche: aggressive Vermeidung von Witwen, Waisen und Heading-Orphans ---
 \widowpenalty=10000           % keine einzelne Zeile am Seitenanfang
@@ -82,8 +82,8 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\small\sffamily\textcolor{lightgray}{Angebot KIWo 2.0}}
-\fancyhead[R]{\small\sffamily\textcolor{lightgray}{OpenAdvo UG \textbar{} Universitätsstadt Tübingen}}
+\fancyhead[L]{\raisebox{-0.3\height}{\includegraphics[height=1cm]{OpenAdvoLogo.png}}}
+\fancyhead[R]{\small\sffamily\textcolor{lightgray}{Angebot KIWo 2.0\\Universitätsstadt Tübingen}}
 \fancyfoot[L]{\small\sffamily\textcolor{lightgray}{OpenAdvo UG (haftungsbeschränkt)}}
 \fancyfoot[R]{\small\sffamily\textcolor{lightgray}{Seite \thepage}}
 \renewcommand{\headrulewidth}{0.4pt}
@@ -152,8 +152,6 @@
 \noindent
 \begin{minipage}[t]{0.55\textwidth}
   \raggedright
-  \vspace{-0.6em}
-  \includegraphics[height=1.3cm]{OpenAdvoLogo.png}\\[0.4em]
   {\sffamily\small\textcolor{lightgray}{ABSENDER}}\\[0.4em]
   {\sffamily\bfseries\large OpenAdvo UG}\\
   {\sffamily\small (haftungsbeschränkt) i.\,G.}\\[0.4em]
@@ -177,7 +175,7 @@
 {\sffamily\small\textcolor{lightgray}{ANGEBOT FÜR}}\\[0.5em]
 {\sffamily\bfseries\Large Universitätsstadt Tübingen}\\[0.6em]
 {\small Am Markt 1\\
-D--72070 Tübingen}\\[0.8em]
+72070 Tübingen}\\[0.8em]
 {\small
   \begin{tabular}{@{}>{\sffamily\color{lightgray}}l@{\hspace{0.6em}}l@{}}
     Telefon & 07071\,204-0 \\
