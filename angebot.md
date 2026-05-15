@@ -1,6 +1,6 @@
 **Auftraggeber:** Universitätsstadt Tübingen
 
-**Auftragnehmer:** OpenAdvo UG (haftungsbeschränkt) 
+**Auftragnehmer:** OpenAdvo UG (haftungsbeschränkt) (i.G) 
 
 **Anschrift:** Weyertal 109, 50931 Köln 
 

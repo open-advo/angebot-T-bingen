@@ -7,14 +7,25 @@
 \usepackage{csquotes}
 
 % --- Typografie ---
-\usepackage{lmodern}
+\usepackage{mathpazo}                       % Palatino-ähnliche Serif für Fließtext
+\usepackage[scaled=0.92]{helvet}            % Helvetica für Überschriften (Sans-Serif)
 \usepackage{microtype}
 \usepackage{parskip}
 \usepackage{setspace}
-\setstretch{1.15}
+\setstretch{1.18}
 
 % --- Layout ---
-\usepackage[a4paper,top=3cm,bottom=3cm,left=2.8cm,right=2.8cm]{geometry}
+\usepackage[a4paper,top=3.2cm,bottom=3.2cm,left=3cm,right=3cm,headheight=22pt]{geometry}
+
+% --- Seitenumbrüche: aggressive Vermeidung von Witwen, Waisen und Heading-Orphans ---
+\widowpenalty=10000           % keine einzelne Zeile am Seitenanfang
+\clubpenalty=10000            % keine einzelne Zeile am Seitenende
+\displaywidowpenalty=10000
+\brokenpenalty=10000          % Trennung am Seitenende meiden
+\raggedbottom                 % Seiten dürfen unterschiedlich hoch enden (kein Stretching)
+\usepackage{needspace}        % erlaubt \needspace{Nlines} vor kritischen Blöcken
+\setlength{\emergencystretch}{3em}  % erlaubt notfalls etwas Wortabstand-Stretching
+\hyphenpenalty=100            % Worttrennung etwas eher erlauben
 
 % --- Tabellen ---
 \usepackage{booktabs}
@@ -23,23 +34,30 @@
 \usepackage{array}
 \usepackage{xcolor}
 \usepackage{colortbl}
-\renewcommand{\arraystretch}{1.4}
+\renewcommand{\arraystretch}{1.45}
 
 % --- Listen ---
 \usepackage{enumitem}
-\setlist[itemize]{leftmargin=1.6em, itemsep=3pt, topsep=4pt, parsep=0pt}
-\setlist[enumerate]{leftmargin=1.6em, itemsep=3pt, topsep=4pt, parsep=0pt}
+\setlist[itemize]{leftmargin=1.4em, itemsep=4pt, topsep=4pt, parsep=0pt,
+                  label={\textcolor{primarycolor}{\textbullet}}}
+\setlist[enumerate]{leftmargin=1.6em, itemsep=4pt, topsep=4pt, parsep=0pt}
 
 % --- Symbole ---
 \usepackage{amssymb}
 \usepackage{pifont}
-\newcommand{\ja}{\ding{51}}
-\newcommand{\nein}{--}
+\newcommand{\ja}{\textcolor{primarycolor}{\ding{51}}}
+\newcommand{\nein}{\textcolor{darkgray}{--}}
 
-% --- Farben ---
+% --- Farben (dezent, behördentauglich) ---
+\definecolor{primarycolor}{HTML}{1F3A5F}    % gedecktes Marineblau
+\definecolor{accentcolor}{HTML}{8C6D3F}     % warmes Bronze
+\definecolor{darkgray}{HTML}{4A4A4A}
+\definecolor{lightgray}{HTML}{6E6E6E}
 \definecolor{placeholder}{gray}{0.45}
-\definecolor{rulecolor}{RGB}{60,90,140}
-\definecolor{tabhead}{RGB}{230,237,248}
+\definecolor{rulecolor}{HTML}{1F3A5F}
+\definecolor{tabhead}{HTML}{1F3A5F}
+\definecolor{tabrowalt}{HTML}{F3F5F8}
+\definecolor{tabrule}{HTML}{C8CFD9}
 
 % --- Platzhalter ---
 \newcommand{\ph}[1]{\textcolor{placeholder}{\textit{[#1]}}}
@@ -61,30 +79,64 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\small\textit{Angebot KIWo 2.0 -- Universitätsstadt Tübingen}}
-\fancyhead[R]{\small\textit{OpenAdvo UG (haftungsbeschränkt)}}
-\fancyfoot[C]{\small\thepage}
-\renewcommand{\headrulewidth}{0.3pt}
-\renewcommand{\footrulewidth}{0pt}
+\fancyhead[L]{\small\sffamily\textcolor{lightgray}{Angebot KIWo 2.0}}
+\fancyhead[R]{\small\sffamily\textcolor{lightgray}{OpenAdvo UG \textbar{} Universitätsstadt Tübingen}}
+\fancyfoot[L]{\small\sffamily\textcolor{lightgray}{OpenAdvo UG (haftungsbeschränkt)}}
+\fancyfoot[R]{\small\sffamily\textcolor{lightgray}{Seite \thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{tabrule}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{tabrule}\leaders\hrule height \footrulewidth\hfill}}
 
-% --- Kapitel- und Abschnittsformat ---
+% --- Kapitel- und Abschnittsformat (Sans-Serif für klare Hierarchie) ---
 \usepackage{titlesec}
-\titleformat{\chapter}[block]
-  {\large\bfseries\color{rulecolor}}
-  {\thechapter}{0.6em}{}[\vspace{2pt}\titlerule]
-\titlespacing{\chapter}{0pt}{2ex}{2ex}
+\titleformat{\chapter}[display]
+  {\sffamily\Large\bfseries\color{primarycolor}}
+  {\sffamily\fontsize{14pt}{16pt}\selectfont\color{lightgray}\MakeUppercase{Kapitel~\thechapter}}
+  {0.6em}
+  {\vspace{0.2em}\sffamily\LARGE\bfseries}
+  [\vspace{0.3em}{\color{primarycolor}\titlerule[1.2pt]}]
+\titlespacing{\chapter}{0pt}{0ex}{3ex}
 
-\titleformat{\section}{\normalsize\bfseries}{\thesection}{0.5em}{}
-\titlespacing{\section}{0pt}{1.5ex}{0.5ex}
+\titleformat{\section}
+  {\sffamily\large\bfseries\color{primarycolor}}
+  {\thesection}{0.6em}{}
+\titlespacing{\section}{0pt}{2.2ex}{0.8ex}
 
-\titleformat{\subsection}{\normalsize\bfseries\itshape}{\thesubsection}{0.5em}{}
-\titlespacing{\subsection}{0pt}{1ex}{0.3ex}
+\titleformat{\subsection}
+  {\sffamily\normalsize\bfseries\color{darkgray}}
+  {\thesubsection}{0.5em}{}
+\titlespacing{\subsection}{0pt}{1.4ex}{0.4ex}
 
-\titleformat{\paragraph}[runin]{\normalfont\bfseries}{}{0em}{}[:]
-\titlespacing{\paragraph}{0pt}{0.6ex}{0.4em}
+\titleformat{\paragraph}[runin]
+  {\sffamily\normalfont\bfseries\color{primarycolor}}{}{0em}{}[\hspace{0.2em}\textemdash\hspace{0.3em}]
+\titlespacing{\paragraph}{0pt}{0.8ex}{0.4em}
 
-% --- Tabellenkopf-Befehl ---
-\newcommand{\tblhead}[1]{\cellcolor{tabhead}\textbf{#1}}
+% Heading-Orphans verhindern: \needspace VOR dem gesamten Section-Befehl
+% (sonst wird die Nummer auf der alten Seite, der Titel auf der neuen Seite gerendert)
+\usepackage{etoolbox}
+\pretocmd{\section}{\needspace{6\baselineskip}}{}{}
+\pretocmd{\subsection}{\needspace{5\baselineskip}}{}{}
+
+% paragraph (runin) braucht extra Behandlung, da \needspace nicht im titleformat geht
+\let\origparagraph\paragraph
+\renewcommand{\paragraph}[1]{\needspace{4\baselineskip}\origparagraph{#1}}
+
+% --- Tabellenkopf & Hilfsbefehle ---
+\newcommand{\tblhead}[1]{\cellcolor{tabhead}\textbf{\textcolor{white}{\sffamily #1}}}
+\newcommand{\tblrowalt}{\rowcolor{tabrowalt}}
+
+% --- Zitatumgebung für Boxen ---
+\usepackage[most]{tcolorbox}
+\newtcolorbox{infobox}{
+  colback=tabrowalt,
+  colframe=primarycolor,
+  boxrule=0pt,
+  leftrule=2.5pt,
+  arc=0pt,
+  outer arc=0pt,
+  left=10pt, right=10pt, top=8pt, bottom=8pt,
+}
 
 % ============================================================
 \begin{document}
@@ -93,40 +145,83 @@
 \begin{titlepage}
 \thispagestyle{empty}
 
-\vspace*{1cm}
-{\color{rulecolor}\rule{\textwidth}{2pt}}
-\vspace{0.6cm}
+% --- Briefkopf ---
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+  \raggedright
+  {\sffamily\small\textcolor{lightgray}{ABSENDER}}\\[0.4em]
+  {\sffamily\bfseries\large OpenAdvo UG}\\
+  {\sffamily\small (haftungsbeschränkt) i.\,G.}\\[0.4em]
+  {\small Weyertal 109\\
+  50931 Köln\\[0.3em]
+  Geschäftsführung: Simon Ebeling}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.4\textwidth}
+  \raggedleft
+  {\sffamily\small\textcolor{lightgray}{ANGEBOTSDATUM}}\\[0.4em]
+  {\sffamily\normalsize 18.\,Mai 2026}\\[0.8em]
+  {\sffamily\small\textcolor{lightgray}{GÜLTIGKEIT}}\\[0.4em]
+  {\sffamily\normalsize 30 Tage}
+\end{minipage}
 
-{\LARGE\bfseries Angebot}\\[0.4em]
-{\large Weiterentwicklung und Pilotierung KIWo 2.0}
+\vspace{2.5cm}
 
-\vspace{0.6cm}
-{\color{rulecolor}\rule{\textwidth}{0.6pt}}
-\vspace{1.2cm}
+% --- Empfänger ---
+\noindent
+{\sffamily\small\textcolor{lightgray}{ANGEBOT FÜR}}\\[0.4em]
+{\sffamily\bfseries\Large Universitätsstadt Tübingen}
 
-\begin{tabularx}{\textwidth}{@{} l X @{}}
-  \textbf{Auftraggeber}      & Universitätsstadt Tübingen \\[0.4em]
-  \textbf{Auftragnehmer}     & OpenAdvo UG (haftungsbeschränkt) \\
-  \textbf{Anschrift}         & Weyertal 109, 50931 Köln \\
-  \textbf{Geschäftsführung} & Simon Ebeling \\[0.4em]
-  \textbf{Angebotsdatum}     & 18.05.2026 \\[0.2em]
-  \textbf{Gültigkeit}      & 30 Tage ab Angebotsdatum \\[0.4em]
-  \textbf{Ansprechpartner}   & Franz Schwärzler, OpenAdvo UG \\
-                             & Leo Reimers, Projektleitung KIWo 2.0 \\
-\end{tabularx}
+\vspace{3cm}
+
+% --- Haupttitel ---
+\noindent
+{\color{primarycolor}\rule{\textwidth}{1.5pt}}\\[0.8em]
+{\sffamily\fontsize{11pt}{13pt}\selectfont\textcolor{lightgray}{\MakeUppercase{Angebot zur}}}\\[0.4em]
+{\sffamily\fontsize{32pt}{38pt}\selectfont\bfseries\color{primarycolor}Weiterentwicklung}\\[0.2em]
+{\sffamily\fontsize{32pt}{38pt}\selectfont\bfseries\color{primarycolor}und Pilotierung}\\[0.4em]
+{\sffamily\fontsize{24pt}{28pt}\selectfont\color{darkgray} KIWo~2.0}\\[1em]
+{\color{primarycolor}\rule{\textwidth}{1.5pt}}
 
 \vfill
-{\color{rulecolor}\rule{\textwidth}{0.6pt}}
+
+% --- Ansprechpartner ---
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+  {\sffamily\small\textcolor{lightgray}{\MakeUppercase{Kaufmännisch \& Vertraglich}}}\\[0.4em]
+  {\sffamily\bfseries Franz Schwärzler}\\
+  {\small OpenAdvo UG}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\textwidth}
+  \raggedleft
+  {\sffamily\small\textcolor{lightgray}{\MakeUppercase{Projektleitung KIWo 2.0}}}\\[0.4em]
+  {\sffamily\bfseries Leo Reimers}\\
+  {\small OpenAdvo UG}
+\end{minipage}
+
+\vspace{0.6cm}
+\noindent{\color{tabrule}\rule{\textwidth}{0.4pt}}
 \end{titlepage}
 
+% --- Inhaltsverzeichnis ---
+\renewcommand{\contentsname}{\sffamily\color{primarycolor}Inhalt}
+\begingroup
+\sffamily
 \tableofcontents
+\endgroup
 \newpage
 
 % ============================================================
 \chapter{Anschreiben}
 % ============================================================
 
-Sehr geehrte Damen und Herren,
+\noindent
+{\sffamily\small\textcolor{lightgray}{Köln, 18.\,Mai 2026}}
+
+\vspace{1.5em}
+\noindent
+{\sffamily\large\bfseries\color{primarycolor}Sehr geehrte Damen und Herren,}
+
+\vspace{0.8em}
 
 im Rahmen des Tech Fellowships 2025/2026 wurde KIWo gemeinsam mit der
 Universitätsstadt Tübingen entwickelt und erfolgreich pilotiert.
@@ -149,14 +244,18 @@ Rückfragen wenden Sie sich bitte an Franz Schwärzler. Das Angebot ist
 
 Wir freuen uns auf die Fortsetzung der vertrauensvollen Zusammenarbeit.
 
-\bigskip
+\vspace{1.5em}
 \noindent
 Mit freundlichen Grüßen
 
-\bigskip\bigskip
+\vspace{2.5em}
 \noindent
-Franz Schwärzler\\
-OpenAdvo UG (haftungsbeschränkt)
+\begin{tabular}{@{}l@{}}
+  \rule{6cm}{0.3pt}\\[0.3em]
+  {\sffamily\bfseries Franz Schwärzler}\\
+  {\small\color{lightgray}Geschäftsführung\,/\,Vertrieb}\\
+  {\small OpenAdvo UG (haftungsbeschränkt)}
+\end{tabular}
 
 % ============================================================
 \chapter{Angebotsüberblick und Entscheidungsgrundlage}
@@ -180,20 +279,22 @@ Skalierungsperspektive.
 
 \section{Leistungsvarianten im Überblick}
 
-\begin{tabularx}{\textwidth}{@{} l X r @{}}
+{\arrayrulecolor{tabrule}
+\begin{tabularx}{\textwidth}{@{} >{\sffamily\bfseries\color{primarycolor}}l X >{\raggedleft\arraybackslash\bfseries}p{2.6cm} @{}}
   \toprule
-  \tblhead{Variante} & \tblhead{Kurzbeschreibung} & \tblhead{Gesamtpreis brutto} \\
+  \tblhead{\hspace{0.2em}Variante} & \tblhead{\hspace{0.2em}Kurzbeschreibung} & \tblhead{Gesamtpreis brutto\hspace{0.2em}} \\
   \midrule
-  \textbf{Mindestumfang}
+  Mindestumfang
     & Fokussierte Weiterentwicklung der zentralen KIWo-Grundfunktionen mit
       einmonatigem Testbetrieb. Die Variante ermöglicht eine abgesicherte
       Fortführung des Projekts, setzt aber bei Integrationsperspektive,
       Smartphone-Optimierung und dynamischem Antragsaufbau bewusst auf
       optionale Bestandteile. Sie eignet sich damit vor allem für eine
       begrenzte Weiterentwicklung mit kontrolliertem Kostenrahmen.
-    & \textbf{50.045{,}00~\texteuro{}} \\[0.4em]
-  \textbf{Kernumfang}
-    & Ausgewogener Leistungsumfang für eine substanzielle
+    & 50.045{,}00~\texteuro{} \\
+  \midrule
+  \tblrowalt Kernumfang
+    & \cellcolor{tabrowalt} Ausgewogener Leistungsumfang für eine substanzielle
       Weiterentwicklung und realitätsnahe Pilotierung. Enthalten sind
       insbesondere Plausibilitäts- und Vollständigkeitsprüfung,
       Anschlussfähigkeit an bestehende Verwaltungsinfrastruktur,
@@ -201,8 +302,9 @@ Skalierungsperspektive.
       einmonatiger Testbetrieb. Die Stadt entscheidet sich damit für eine
       belastbare Kernvariante, die zentrale Entwicklungs- und
       Erkenntnisziele abdeckt, ohne den maximalen Vollumfang zu beauftragen.
-    & \textbf{55.131{,}00~\texteuro{}} \\[0.4em]
-  \textbf{Vollumfang}
+    & \cellcolor{tabrowalt} 55.131{,}00~\texteuro{} \\
+  \midrule
+  Vollumfang
     & Umfassendste Variante mit erweitertem Pilotierungs- und
       Skalierungsanspruch. Zusätzlich zum gemeinsamen Leistungsumfang
       umfasst sie insbesondere vertiefte UX-Konzeption, vollständige
@@ -212,9 +314,9 @@ Skalierungsperspektive.
       regelmäßiger Vor-Ort-Begleitung durch das Entwicklungsteam. Die
       Stadt entscheidet sich damit für die Variante mit der höchsten
       Aussagekraft für Verstetigung, Integration und mögliche Skalierung.
-    & \textbf{68.302{,}00~\texteuro{}} \\
+    & 68.302{,}00~\texteuro{} \\
   \bottomrule
-\end{tabularx}
+\end{tabularx}}
 
 \medskip
 Die ausführliche Beschreibung der enthaltenen Leistungen findet sich in
@@ -340,46 +442,48 @@ Zusätzlich zum gemeinsamen Leistungsumfang umfasst die Variante \textbf{Vollumf
 
 \section{Vergleich der Varianten}
 
-\begin{tabularx}{\textwidth}{@{} >{\raggedright\arraybackslash}X p{2.4cm} p{2.4cm} p{2.4cm} @{}}
+{\arrayrulecolor{tabrule}\small\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{} >{\raggedright\arraybackslash\bfseries\color{darkgray}}X >{\raggedright\arraybackslash}p{2.7cm} >{\raggedright\arraybackslash}p{2.7cm} >{\raggedright\arraybackslash}p{2.7cm} @{}}
   \toprule
-  \tblhead{Leistungsbereich}
+  \tblhead{\hspace{0.2em}Leistungsbereich}
     & \tblhead{Mindestumfang}
     & \tblhead{Kernumfang}
     & \tblhead{Vollumfang} \\
   \midrule
-  \textbf{Preis brutto}
-    & 50.045~\texteuro{}
-    & 55.131~\texteuro{}
-    & 68.302~\texteuro{} \\
-  \textbf{Gemeinsamer Leistungsumfang}
-    & Enthalten & Enthalten & Enthalten \\
-  \textbf{Plausibilitäts- und Vollständigkeitsprüfung}
+  Preis brutto
+    & \textbf{50.045~\texteuro{}}
+    & \textbf{55.131~\texteuro{}}
+    & \textbf{68.302~\texteuro{}} \\
+  \tblrowalt Gemeinsamer Leistungsumfang
+    & \ja{} Enthalten & \ja{} Enthalten & \ja{} Enthalten \\
+  Plausibilitäts- und Vollständigkeitsprüfung
     & Stark vereinfacht & Normal & Umfassend \\
-  \textbf{Anschlussfähigkeit an Verwaltungsinfrastruktur / Fachverfahren}
-    & Nicht enthalten & Enthalten & Enthalten \\
-  \textbf{UX-Konzeption und nutzerzentrierte Optimierung}
+  \tblrowalt Anschlussfähigkeit an Verwaltungsinfrastruktur
+    & \nein{} Nicht enthalten & \ja{} Enthalten & \ja{} Enthalten \\
+  UX-Konzeption \& nutzerzentrierte Optimierung
     & Eingeschränkt & Verbessert & Stark verbessert \\
-  \textbf{Externe UX-Begleitung}
-    & Review-/ratgebende Funktion
-    & Review-/ratgebende Funktion
-    & Mitgestaltende Funktion \\
-  \textbf{Smartphone-optimierte Nutzung}
-    & Nicht enthalten & Enthalten & Enthalten \\
-  \textbf{Dynamischer Antragsaufbau / Law-as-Code-Optimierung}
-    & Nicht enthalten & Vereinfacht enthalten & Enthalten \\
-  \textbf{Testbetrieb mit Antragstellenden, Verwaltung und Beratungsstellen}
+  \tblrowalt Externe UX-Begleitung
+    & Review\,/\,rat\-gebend
+    & Review\,/\,rat\-gebend
+    & Mitgestaltend \\
+  Smartphone-optimierte Nutzung
+    & \nein{} Nicht enthalten & \ja{} Enthalten & \ja{} Enthalten \\
+  \tblrowalt Dynamischer Antragsaufbau (Law-as-Code)
+    & \nein{} Nicht enthalten & Vereinfacht & \ja{} Enthalten \\
+  Testbetrieb mit Antragstellenden, Verwaltung und Beratungsstellen
     & 1~Monat & 1~Monat & 2~Monate \\
-  \textbf{Vor-Ort-Besuche Entwickler-Team}
+  \tblrowalt Vor-Ort-Besuche Entwickler-Team
     & Vereinzelt & Vereinzelt & Regelmäßig \\
-  \textbf{Technische Stabilisierung und Bug-Fixing}
-    & Enthalten, aber mit reduziertem Gesamtaufwand & Enthalten & Enthalten \\
+  Technische Stabilisierung \& Bug-Fixing
+    & Enthalten (reduziert) & \ja{} Enthalten & \ja{} Enthalten \\
   \midrule
-  \textbf{Risiko / fachliche Einordnung}
-    & Schlanke Mindestvariante mit erhöhtem Risiko, dass Nutzen und Skalierbarkeit weniger belastbar nachweisbar sind
-    & Tragfähige Kompromissvariante
-    & Größte Aussagekraft und beste Grundlage für Anschlussprojekt \\
+  \rowcolor{tabrowalt}
+  \textcolor{primarycolor}{\textbf{Fachliche Einordnung}}
+    & Schlanke Min\-dest\-variante; erhöhtes Risiko bei Nutzen-\,/\,Ska\-lie\-rungs\-nachweis
+    & Tragfähige Kompromiss\-variante
+    & Größte Aussage\-kraft; beste Grund\-lage für An\-schluss\-projekt \\
   \bottomrule
-\end{tabularx}
+\end{tabularx}}
 
 \section{Abgrenzung}
 
@@ -449,36 +553,39 @@ Zahlungsmeilensteine wird nach Auswahl der Leistungsvariante gemeinsam
 festgelegt. Die folgende Struktur dient als Vorschlag für eine
 nachvollziehbare Auszahlung entlang prüfbarer Projektstände.
 
-\begin{tabularx}{\textwidth}{@{} l X r @{}}
+{\arrayrulecolor{tabrule}
+\begin{tabularx}{\textwidth}{@{} >{\sffamily\bfseries\color{primarycolor}}p{4.5cm} X >{\raggedleft\arraybackslash\bfseries}p{1.6cm} @{}}
   \toprule
-  \tblhead{Zahlungszeitpunkt} & \tblhead{Nachweisbarer Auslöser} & \tblhead{Anteil} \\
+  \tblhead{\hspace{0.2em}Zahlungszeitpunkt} & \tblhead{\hspace{0.2em}Nachweisbarer Auslöser} & \tblhead{Anteil\hspace{0.2em}} \\
   \midrule
-  \textbf{Projektstart}
+  Projektstart
     & Beauftragung erfolgt; Projekt ist organisatorisch gestartet und die
       Konzeptionsphase beginnt.
-    & \textbf{25~\%} \\[0.4em]
-  \textbf{Konzeptionsgrundlage abgestimmt}
-    & Systemarchitektur, fachliche Entscheidungslogik, Nutzerfluss,
+    & 25~\% \\
+  \tblrowalt Konzeptionsgrundlage abgestimmt
+    & \cellcolor{tabrowalt} Systemarchitektur, fachliche Entscheidungslogik, Nutzerfluss,
       Datenschutz-/Compliance-Grundlagen und UX-Grundlage liegen als
       abgestimmter Arbeitsstand vor.
-    & \textbf{20~\%} \\[0.4em]
-  \textbf{KIWo grundsätzlich nutzbar}
+    & \cellcolor{tabrowalt} 20~\% \\
+  KIWo grundsätzlich nutzbar
     & Zentrale Logikbestandteile sind integriert; ein lauffähiger
       KIWo-Stand kann demonstriert und für begleitete Tests genutzt
       werden.
-    & \textbf{25~\%} \\[0.4em]
-  \textbf{Breiterer Testbetrieb vorbereitet}
-    & Begleitete Tests wurden ausgewertet, wesentliche Nacharbeiten
+    & 25~\% \\
+  \tblrowalt Breiterer Testbetrieb vorbereitet
+    & \cellcolor{tabrowalt} Begleitete Tests wurden ausgewertet, wesentliche Nacharbeiten
       umgesetzt, Sicherheitsprüfung abgeschlossen und
       Onboarding-Unterlagen/Testgruppen-Setup vorbereitet.
-    & \textbf{20~\%} \\[0.4em]
-  \textbf{Projekt abgeschlossen}
+    & \cellcolor{tabrowalt} 20~\% \\
+  Projekt abgeschlossen
     & Testbetrieb, Evaluation und Abschlussdokumentation sind
       abgeschlossen; die Ergebnisse sind für die Bewertung von Nutzen,
       Machbarkeit und Skalierung aufbereitet.
-    & \textbf{10~\%} \\
+    & 10~\% \\
+  \midrule
+  \multicolumn{2}{@{}r}{\textbf{\color{primarycolor}Summe}} & \textbf{100~\%} \\
   \bottomrule
-\end{tabularx}
+\end{tabularx}}
 
 \section{Qualitätssicherung und Projektorganisation}
 
@@ -645,6 +752,13 @@ gegenüber der Universitätsstadt Tübingen rechtsverbindlich:
 
 \begin{enumerate}[label=\textbf{\arabic*.}, leftmargin=2em, itemsep=1em]
 
+  \item \textbf{Gesellschaftsrechtlicher Status}\\
+    Die OpenAdvo UG (haftungsbeschränkt) i.\,G. befindet sich derzeit im
+    Gründungsprozess. Die notarielle Beurkundung des Gesellschaftsvertrages
+    ist am 20.04.2026 erfolgt; die Eintragung in das Handelsregister ist
+    beantragt bzw. wird in Kürze erfolgen. Der Handelsregisterauszug wird
+    unverzüglich nach Eintragung nachgereicht.
+
   \item \textbf{Tariftreue und Mindestentgelt nach LTMG BW}\\
     Die OpenAdvo UG (haftungsbeschränkt) verpflichtet sich, ihren
     Beschäftigten sowie den Beschäftigten eingesetzter
@@ -672,12 +786,19 @@ gegenüber der Universitätsstadt Tübingen rechtsverbindlich:
 
 \end{enumerate}
 
-\vfill
-\noindent
-\textit{Köln, den 18.05.2026}
+\vspace{2em}
+\noindent{\color{tabrule}\rule{\textwidth}{0.4pt}}
 
-\bigskip\bigskip
+\vspace{1em}
 \noindent
-\textit{Franz Schwärzler, OpenAdvo UG (haftungsbeschränkt)}
+{\sffamily\small\textcolor{lightgray}{Köln, 18.\,Mai 2026}}
+
+\vspace{2em}
+\noindent
+\begin{tabular}{@{}l@{}}
+  \rule{6cm}{0.3pt}\\[0.3em]
+  {\sffamily\bfseries Franz Schwärzler}\\
+  {\small OpenAdvo UG (haftungsbeschränkt)}
+\end{tabular}
 
 \end{document}
