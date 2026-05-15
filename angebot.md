@@ -4,10 +4,6 @@
 
 **Anschrift:** Weyertal 109, 50931 Köln 
 
-**Handelsregister:** HRB [Nummer], Amtsgericht [Registergericht] 
-
-**USt-IdNr.:** [USt-IdNr.] 
-
 **Geschäftsführung:** Simon Ebeling
 
 **Angebotsdatum:** 18.05.2026 
@@ -268,7 +264,7 @@ Steuern, Sozialversicherungsbeiträge und Beiträge zu den gesetzlichen Unfallve
 
 ### 3. Ergänzende Anlagen
 
-Die detaillierte Kostenkalkulation zu den drei Leistungsvarianten ist diesem Angebot als separate Anlage im Excel-Format (.xlsx) beigefügt. Die Anlage enthält die nachvollziehbare Aufschlüsselung der Personal-, Sach- und Fremdleistungskosten je Variante und dient als Grundlage für die in Kapitel 6 dargestellten Gesamtpreise.
+Die detaillierte Kostenkalkulation zu den drei Leistungsvarianten ist diesem Angebot als separate Anlage als PDF-Datei (.pdf) beigefügt. Die Anlage enthält die nachvollziehbare Aufschlüsselung der Personal-, Sach- und Fremdleistungskosten je Variante und dient als Grundlage für die in Kapitel 4 dargestellten Gesamtpreise.
 
 ---
 

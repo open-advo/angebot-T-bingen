@@ -106,10 +106,8 @@
 
 \begin{tabularx}{\textwidth}{@{} l X @{}}
   \textbf{Auftraggeber}      & Universit\"atsstadt T\"ubingen \\[0.4em]
-  \textbf{Auftragnehmer}     & OpenAdvo UG (haftungsbeschr\"ankt) \\
+  \textbf{Auftragnehmer}     & OpenAdvo UG (haftungsbeschr\"ankt) (i.G)\\
                              & Weyertal 109, 50931 K\"oln \\
-                             & Handelsregister: HRB \ph{Nummer}, Amtsgericht \ph{Registergericht} \\
-                             & USt-IdNr.: \ph{USt-IdNr.} \\
                              & Gesch\"aftsf\"uhrung: Simon Ebeling \\[0.4em]
   \textbf{Angebotsdatum}     & 18.05.2026 \\[0.2em]
   \textbf{G\"ultigkeit}        & 30 Tage ab Angebotsdatum \\[0.4em]
@@ -210,13 +208,453 @@ Skalierungsperspektive.
 Die ausführliche Beschreibung der enthaltenen Leistungen findet sich in
 Kapitel~4.
 
-% Kapitel 3-7 und Anhang
+% ============================================================
+\chapter{Ausgangslage und Zielsetzung}
+% ============================================================
 
-\input{kapitel/03_ausgangslage}
-\input{kapitel/04_leistungsbeschreibung}
-\input{kapitel/05_vorgehen}
-\input{kapitel/06_preise}
-\input{kapitel/07_openadvo}
-\input{kapitel/anhang}
+\section{Ausgangspunkt der bisherigen Pilotierung}
+
+Im Rahmen des Tech Fellowships 2025/2026 wurde KIWo gemeinsam mit der
+Universitätsstadt Tübingen entwickelt und in einer ersten Testphase für den
+Wohngeldantragsprozess erprobt. Die Testphase läuft derzeit noch bis Ende
+Mai~2026, sodass eine abschließende Evaluation der Ergebnisse noch aussteht.
+
+Bereits zum aktuellen Stand lassen sich jedoch erste vorläufige Erkenntnisse
+ableiten, die für die Weiterentwicklung von KIWo~2.0 maßgeblich sind.
+
+\section{Vorläufige Erkenntnisse aus der Testphase}
+
+In der bisherigen Testphase wurden über KIWo sechs Wohngeldanträge bei der
+Wohngeldstelle eingereicht. Zusätzlich wurden rund 40~Studierende durch den
+Chatbot beraten, ohne anschließend einen Antrag einzureichen.
+
+Die bei der Wohngeldstelle eingegangenen Anträge wurden verwaltungsseitig
+positiv bewertet. Insbesondere die strukturierte Erfassung und Sammlung der
+notwendigen Dokumente wurde als hilfreich eingeordnet. Nach Rückmeldung von
+Mariola Geiger, Leitung der Wohngeldstelle Tübingen, konnte bei den
+eingegangenen Anträgen eine Reduzierung der Bearbeitungszeit von rund
+50~\% beobachtet werden.
+
+Gleichzeitig zeigte die Testphase eine zentrale Grenze der bisherigen
+Aussagekraft: Der Prototyp war zunächst auf Studierende sowie auf Personen
+mit eigenem Haushalt ausgerichtet. Dadurch war der erreichbare Kreis
+potenziell wohngeldberechtigter Testpersonen begrenzt. Eine belastbarere
+Bewertung des Nutzens erfordert daher eine Öffnung für weitere
+Personengruppen und komplexere Haushaltskonstellationen.
+
+Ergänzend wurden Rückmeldungen aus Beratungskontexten eingeholt, unter
+anderem von Diakonie, KIT Jugendhilfe und dem Formularcoaching der
+Wohngeldstelle. Diese Rückmeldungen bestätigen grundsätzlich das Potenzial
+eines KI-gestützten Assistenzsystems, verweisen aber zugleich auf weiteren
+Verbesserungsbedarf bei Nutzerführung, einfacher Sprache und praktischer
+Einsetzbarkeit im Beratungskontext.
+
+\section{Ableitung für KIWo 2.0}
+
+Aus den bisherigen Erkenntnissen ergibt sich für die nächste Projektphase
+der Bedarf, KIWo über den bisherigen begrenzten Testkontext hinaus
+weiterzuentwickeln und unter realitätsnäheren Bedingungen zu erproben. Ziel
+ist es, die Aussagekraft der Pilotierung zu erhöhen, den Einsatz in
+Beratungskontexten besser zu ermöglichen und die verwaltungsseitig positiv
+bewerteten Funktionen zur strukturierten Dokumentenerfassung und
+Antragsvorbereitung weiter zu stabilisieren.
+
+Die daraus abgeleiteten Leistungen werden im gemeinsamen Leistungsumfang der
+Varianten in Abschnitt~4.1 sowie in den variantenbezogenen Ergänzungen in
+den Abschnitten~4.2 bis~4.4 dargestellt.
+
+% ============================================================
+\chapter{Leistungsbeschreibung der Varianten}
+% ============================================================
+
+\section{Gemeinsamer Leistungsumfang}
+
+Folgende Leistungen sind in allen drei Varianten gleichermaßen enthalten:
+
+\begin{itemize}
+  \item \textbf{Abbildung der zentralen wohngeldrechtlichen Entscheidungslogik} für relevante Personengruppen und typische Haushaltskonstellationen. Die Abdeckung erstreckt sich auf die wesentlichen Standardfälle; seltene Sonderfälle sind nicht Bestandteil des gemeinsamen Leistungsumfangs.
+  \item \textbf{Digitale Vorprüfung mit Anspruchsindikation} als unterstützende, ausdrücklich nicht rechtsverbindliche Einschätzung.
+  \item \textbf{KI-gestützte Unterstützung im Antragsprozess}, insbesondere bei Eingaben, Spracheingabe, Verständnisfragen, dem Hochladen von Nachweisen sowie bei typischen Unsicherheiten während der Antragstellung.
+  \item \textbf{Automatisierte Auswertung hochgeladener Nachweise} mit Extraktion relevanter Angaben und strukturierter Übernahme ausgewählter Daten in den Antrag.
+  \item \textbf{Datenschutz-, Sicherheits- und Compliance-Leistungen}, insbesondere DSGVO-Grundkonzept, Prüfung der Konformität mit der EU-KI-Verordnung, Schwachstellen-Screening sowie ein Penetrationstest vor breiterer Nutzung.
+  \item \textbf{Technische Stabilisierung und Fehlerbehebung} während der Test- und Nutzungsphase.
+  \item \textbf{Evaluation und Abschlussdokumentation}, einschließlich Erhebung und Auswertung von Evaluationsdaten sowie Bewertung von Nutzen, Machbarkeit und Skalierungspotenzial.
+  \item \textbf{Roll-out-Perspektive für eine Anschlussphase}, einschließlich zeitlich unbegrenzter Nutzungsmöglichkeit der entwickelten KIWo-Version ohne zusätzliche Lizenzgebühren an OpenAdvo UG; laufende Betriebs- und Folgekosten sind hiervon nicht umfasst.
+\end{itemize}
+
+\section{Variante Mindestumfang}
+
+Zusätzlich zum gemeinsamen Leistungsumfang (Abschnitt~4.1) umfasst die Variante \textbf{Mindestumfang}:
+
+\begin{itemize}
+  \item \textbf{Vereinfachte Plausibilitäts- und Vollständigkeitsprüfung} mit Hinweisen zu fehlenden, unplausiblen oder widersprüchlichen Angaben.
+  \item \textbf{UX-Konzeption und nutzerzentrierte Optimierung} mit grundlegender Schritt-für-Schritt-Führung durch den Wohngeldantrag.
+  \item \textbf{Begleitendes externes UX-Review} als ergänzende Qualitätssicherungsmaßnahme.
+  \item \textbf{Testbetrieb mit einmonatiger Laufzeit} unter Beteiligung von Antragstellenden, Mitarbeitenden der Verwaltung sowie Beratungsstellen, einschließlich begleiteter Nutzertests und strukturierter Praxisrückmeldungen.
+  \item \textbf{Punktuelle Begleitung vor Ort in Tübingen} durch das Kölner Entwicklungsteam, einschließlich Systemdemonstrationen und fachlichen Austauschs.
+\end{itemize}
+
+\medskip
+\noindent\textbf{Gesamtpreis Variante Mindestumfang: 50.045{,}00~\texteuro{} brutto}
+
+\section{Variante Kernumfang}
+
+Zusätzlich zum gemeinsamen Leistungsumfang (Abschnitt~4.1) umfasst die Variante \textbf{Kernumfang}:
+
+\begin{itemize}
+  \item \textbf{Plausibilitäts- und Vollständigkeitsprüfung} mit Hinweisen zu fehlenden, unplausiblen oder widersprüchlichen Angaben.
+  \item \textbf{Anschlussfähigkeit an die bestehende Verwaltungsinfrastruktur}, insbesondere an Fachverfahren -- beispielsweise über FIT-Connect oder DiWo.
+  \item \textbf{UX-Konzeption und nutzerzentrierte Optimierung} mit nutzerfreundlicher Schritt-für-Schritt-Führung durch den Wohngeldantrag.
+  \item \textbf{Begleitendes externes UX-Review} als ergänzende Qualitätssicherungsmaßnahme.
+  \item \textbf{Smartphone-optimierte Nutzeroberfläche}, sodass der Antragsprozess auch über ein Smartphone durchlaufen werden kann.
+  \item \textbf{Vereinfachter dynamischer Antragsaufbau} für zentrale Standardfälle, einschließlich regelbasierter Nutzerführung; eine vollständige Law-as-Code-Abbildung ist dem Vollumfang vorbehalten.
+  \item \textbf{Testbetrieb mit einmonatiger Laufzeit} unter Beteiligung von Antragstellenden, Mitarbeitenden der Verwaltung sowie Beratungsstellen, einschließlich begleiteter Nutzertests und strukturierter Praxisrückmeldungen.
+  \item \textbf{Punktuelle Begleitung vor Ort in Tübingen} durch das Kölner Entwicklungsteam, einschließlich Systemdemonstrationen und fachlichen Austauschs.
+\end{itemize}
+
+\medskip
+\noindent\textbf{Gesamtpreis Variante Kernumfang: 55.131{,}00~\texteuro{} brutto}
+
+\section{Variante Vollumfang}
+
+Zusätzlich zum gemeinsamen Leistungsumfang (Abschnitt~4.1) umfasst die Variante \textbf{Vollumfang}:
+
+\begin{itemize}
+  \item \textbf{Umfassende Plausibilitäts- und Vollständigkeitsprüfung} mit Hinweisen zu fehlenden, unplausiblen oder widersprüchlichen Angaben.
+  \item \textbf{Anschlussfähigkeit an die bestehende Verwaltungsinfrastruktur}, insbesondere an Fachverfahren -- beispielsweise über FIT-Connect oder DiWo. Die Integrationsperspektive umfasst Formularmanagement-Systeme, FIT-Connect, DiWo, XÖV-Mapping sowie E-Akten- und Dokumentenmanagement-Systeme.
+  \item \textbf{Vertiefte UX-Konzeption und nutzerzentrierte Optimierung} mit einer verständlichen Schritt-für-Schritt-Führung durch den Wohngeldantrag.
+  \item \textbf{Externe UX-Begleitung im vollen Umfang} gemäß der ursprünglichen Projektplanung.
+  \item \textbf{Smartphone-optimierte Nutzeroberfläche}, sodass der gesamte Antragsprozess übersichtlich auf einem Smartphone durchlaufen werden kann.
+  \item \textbf{Dynamischer Antragsaufbau auf Basis eines Law-as-Code-Ansatzes} zur Reduzierung der Bearbeitungszeit, einschließlich Echtzeit-Vorprüfung und nachvollziehbarer Referenzierung auf einschlägige Gesetzespassagen.
+  \item \textbf{Testbetrieb mit zweimonatiger Laufzeit} unter Beteiligung von Antragstellenden, Mitarbeitenden der Verwaltung sowie Beratungsstellen, einschließlich begleiteter Nutzertests und strukturierter Praxisrückmeldungen.
+  \item \textbf{Regelmäßige Begleitung vor Ort in Tübingen} durch das Kölner Entwicklungsteam, einschließlich Systemdemonstrationen, persönlicher Abstimmungen und fachlichen Austauschs.
+\end{itemize}
+
+\medskip
+\noindent\textbf{Gesamtpreis Variante Vollumfang: 68.302{,}00~\texteuro{} brutto}
+
+\section{Vergleich der Varianten}
+
+\begin{tabularx}{\textwidth}{@{} >{\raggedright\arraybackslash}X p{2.4cm} p{2.4cm} p{2.4cm} @{}}
+  \toprule
+  \tblhead{Leistungsbereich}
+    & \tblhead{Mindestumfang}
+    & \tblhead{Kernumfang}
+    & \tblhead{Vollumfang} \\
+  \midrule
+  \textbf{Preis brutto}
+    & \textbf{50.045~\texteuro{}}
+    & \textbf{55.131~\texteuro{}}
+    & \textbf{68.302~\texteuro{}} \\
+  Gemeinsamer Leistungsumfang
+    & Enthalten & Enthalten & Enthalten \\
+  Plausibilitäts- und Vollständigkeitsprüfung
+    & Stark vereinfacht & Normal & Umfassend \\
+  Anschlussfähigkeit an Verwaltungsinfrastruktur
+    & Nicht enthalten & Enthalten & Enthalten \\
+  UX-Konzeption und nutzerzentrierte Optimierung
+    & Eingeschränkt & Verbessert & Stark verbessert \\
+  Externe UX-Begleitung
+    & Review-/ratgebende Funktion
+    & Review-/ratgebende Funktion
+    & Mitgestaltende Funktion \\
+  Smartphone-optimierte Nutzung
+    & Nicht enthalten & Enthalten & Enthalten \\
+  Dynamischer Antragsaufbau / Law-as-Code
+    & Nicht enthalten & Vereinfacht & Enthalten \\
+  Testbetrieb
+    & 1 Monat & 1 Monat & 2 Monate \\
+  Vor-Ort-Besuche Entwickler-Team
+    & Vereinzelt & Vereinzelt & Regelmäßig \\
+  Technische Stabilisierung und Bug-Fixing
+    & Enthalten (reduzierter Aufwand) & Enthalten & Enthalten \\
+  \midrule
+  \textbf{Risiko / fachliche Einordnung}
+    & Schlanke Mindestvariante; Nutzen und Skalierbarkeit weniger belastbar nachweisbar
+    & Tragfähige Kompromissvariante
+    & Größte Aussagekraft; beste Grundlage für Anschlussprojekt \\
+  \bottomrule
+\end{tabularx}
+
+\section{Abgrenzung}
+
+Nicht Bestandteil des Angebots sind insbesondere die Bearbeitung seltener
+Sonderfälle der wohngeldrechtlichen Entscheidungslogik, die außerhalb
+typischer Haushaltskonstellationen liegen, sowie die rechtsverbindliche
+Bewertung individueller Leistungsansprüche; verbindliche Entscheidungen
+verbleiben ausschließlich bei der zuständigen Behörde.
+
+% ============================================================
+\chapter{Vorgehen, Zeitplan und Projektorganisation}
+% ============================================================
+
+Die Leistungserbringung erfolgt in mehreren aufeinander aufbauenden
+Projektphasen. Der konkrete Phasen- und Meilensteinplan wird nach Auswahl
+der Leistungsvariante gemeinsam mit der Universitätsstadt Tübingen
+finalisiert und im Projekthandbuch dokumentiert.
+
+Das Projekt orientiert sich am V-Modell~XT in der Projekttypvariante
+\enquote{AN-Projekt mit Weiterentwicklung} und verbindet dessen strukturierte
+Phasen-, Rollen- und Qualitätssicherungslogik mit einer iterativen Umsetzung
+in regelmäßigen Entwicklungs- und Abstimmungsschleifen.
+
+\section{Projektphasen und Meilensteine}
+
+\paragraph{P1 -- Grundlagen und Konzeption (ca. Monat 1)}
+Aktualisierung der Systemarchitektur, Erweiterung der Entscheidungslogik und
+des Nutzerflusses, Berücksichtigung relevanter Personengruppen und
+Haushaltskonstellationen sowie Erarbeitung der Datenschutz-, Compliance-
+und UX-Grundlagen.\\
+\textbf{Meilenstein 1: Konzeptionsgrundlage abgestimmt}
+
+\paragraph{P2 -- Review und Integration (ca. Monat 2)}
+Review von Systemarchitektur und Entscheidungslogik, Integration zentraler
+Logikbestandteile in KIWo, UX-Update sowie frühe Qualitätssicherung durch
+ein Schwachstellen-Screening.\\
+\textbf{Meilenstein 2: KIWo grundsätzlich nutzbar}
+
+\paragraph{P3 -- Begleitete Tests und Weiterentwicklung (ca. Monat 3 bis 4)}
+Begleitete Nutzertests, Feedback aus Verwaltung und Beratungsstellen,
+Auswertung der Rückmeldungen, fachliche Nachschärfungen, technische
+Weiterentwicklung und Sicherheitsprüfung vor breiterer Nutzung.\\
+\textbf{Meilenstein 3: Begleitete Tests ausgewertet und System weiterentwickelt}\\
+\textbf{Meilenstein 4: Sicherheitsprüfung vor breiterer Nutzung abgeschlossen}
+
+\paragraph{P4 -- Stabilisierung und Onboarding (ca. Monat 5)}
+Nacharbeiten aus den begleiteten Tests, Bug-Fixes, Stabilisierung der
+Systemversion und Vorbereitung der Testgruppen. In dieser Phase werden
+grundsätzlich keine neuen Kernfunktionen aufgenommen.\\
+\textbf{Meilenstein 5: Breiterer Testbetrieb vorbereitet}
+
+\paragraph{P5 -- Nutzertests, Evaluation und Abschluss (ca. Monat 6 bis 7)}
+Durchführung des Testbetriebs, Bearbeitung akuter technischer Probleme,
+Sammlung und Auswertung von Evaluationsdaten sowie Erstellung der
+Abschlussdokumentation.\\
+\textbf{Meilenstein 6: Evaluation und Abschlussbericht vorgelegt}
+
+\section{Auszahlungskonzept}
+
+Die Auszahlung erfolgt meilensteinbezogen. Die genaue Ausgestaltung wird
+nach Auswahl der Leistungsvariante gemeinsam festgelegt. Die folgende
+Struktur dient als Vorschlag für eine nachvollziehbare Auszahlung entlang
+prüfbarer Projektstände.
+
+\begin{tabularx}{\textwidth}{@{} X X r @{}}
+  \toprule
+  \tblhead{Zahlungszeitpunkt} & \tblhead{Nachweisbarer Auslöser} & \tblhead{Anteil} \\
+  \midrule
+  Projektstart
+    & Beauftragung erfolgt; Projekt ist organisatorisch gestartet und
+      die Konzeptionsphase beginnt.
+    & 25~\% \\[0.4em]
+  Konzeptionsgrundlage abgestimmt
+    & Systemarchitektur, Entscheidungslogik, Nutzerfluss,
+      Datenschutz-/Compliance-Grundlagen und UX-Grundlage liegen als
+      abgestimmter Arbeitsstand vor.
+    & 20~\% \\[0.4em]
+  KIWo grundsätzlich nutzbar
+    & Zentrale Logikbestandteile sind integriert; ein lauffähiger
+      KIWo-Stand kann demonstriert und für begleitete Tests genutzt werden.
+    & 25~\% \\[0.4em]
+  Breiterer Testbetrieb vorbereitet
+    & Begleitete Tests wurden ausgewertet, wesentliche Nacharbeiten
+      umgesetzt, Sicherheitsprüfung abgeschlossen und
+      Onboarding-Unterlagen vorbereitet.
+    & 20~\% \\[0.4em]
+  Projekt abgeschlossen
+    & Testbetrieb, Evaluation und Abschlussdokumentation sind
+      abgeschlossen; Ergebnisse sind für die Bewertung von Nutzen,
+      Machbarkeit und Skalierung aufbereitet.
+    & 10~\% \\
+  \midrule
+  \textbf{Gesamt} & & \textbf{100~\%} \\
+  \bottomrule
+\end{tabularx}
+
+\section{Qualitätssicherung und Projektorganisation}
+
+Die Qualitätssicherung im Projekt KIWo~2.0 verfolgt das Ziel, die fachliche
+Korrektheit, technische Stabilität, Sicherheit und Nutzbarkeit des Systems
+über den gesamten Projektverlauf hinweg systematisch abzusichern. Sie ist
+als kontinuierlicher, projektbegleitender Prozess angelegt und orientiert
+sich an den Vorgaben des V-Modell~XT.
+
+Auf technischer Ebene umfasst die Qualitätssicherung insbesondere
+systematische Code-Reviews, automatisierte Tests sowie ein fortlaufendes
+Schwachstellen-Screening. Ergänzend wird vor der breiteren Nutzung ein
+externer Penetrationstest durchgeführt, einschließlich eines Re-Tests zur
+Verifikation der behobenen Findings. Damit wird sichergestellt, dass
+identifizierte Schwachstellen nicht nur dokumentiert, sondern auch
+nachweislich geschlossen werden.
+
+Auf fachlicher und nutzerorientierter Ebene wird die Qualitätssicherung
+durch die Begleitung der Test- und Pilotbetriebsphase ergänzt. Hierzu
+gehören strukturierte Nutzertests, die Einbindung von Antragstellenden,
+Mitarbeitenden der Verwaltung sowie Beratungsstellen und die systematische
+Erhebung und Auswertung von Praxisrückmeldungen.
+
+Risiken werden im Rahmen des Projektmanagements fortlaufend identifiziert,
+bewertet und gemeinsam mit der Universitätsstadt Tübingen abgestimmt. Eine
+ausführliche und variantenspezifische Ausarbeitung der Qualitätssicherungs-
+maßnahmen sowie des Risikomanagements erfolgt im Rahmen der
+Projektinitialisierungsphase und wird Bestandteil des Projekthandbuchs.
+
+Die Projektleitung ist in Tübingen ansässig und steht der Universitätsstadt
+als örtliche Schnittstelle zur Verfügung. Systemarchitektur, Qualitäts-
+sicherung und Entwicklung sind in Köln kolokiert. Externe Spezialisten
+werden in den Bereichen UX-Design, Datenschutz, IT-Sicherheit und KI-Recht
+eingebunden.
+
+\section{Mitwirkung der Universitätsstadt Tübingen}
+
+Die Durchführung des Folgeprojekts setzt eine enge, pragmatische
+Zusammenarbeit mit der Universitätsstadt Tübingen voraus. Die Mitwirkung
+orientiert sich an der bewährten Zusammenarbeit aus der bisherigen
+Projektphase und wird nach Auswahl der Leistungsvariante konkret abgestimmt.
+
+Zentral ist insbesondere die fachliche Einbindung der Wohngeldstelle.
+Diese unterstützt nach Möglichkeit bei der Erweiterung der
+Entscheidungslogik auf weitere Personengruppen und Haushaltskonstellationen,
+bei fachlichen Reviews der umgesetzten Logik sowie bei der Bewertung
+praxisnaher Testfälle.
+
+Darüber hinaus unterstützt die Stadt das Projekt insbesondere durch:
+
+\begin{itemize}
+  \item Vermittlung zu Beratungsstellen für den Testbetrieb.
+  \item Nutzung geeigneter Informationskanäle zur Ansprache potenzieller Testnutzer:innen.
+  \item Teilnahme an projektbezogenen Abstimmungen und Lenkungsentscheidungen.
+  \item Notwendige organisatorische und rechtliche Abstimmungen, etwa zu Datenschutz, Auftragsverarbeitung und Testbetrieb.
+\end{itemize}
+
+% ============================================================
+\chapter{Preise und Vertragsbedingungen}
+% ============================================================
+
+Die in Kapitel~4 ausgewiesenen Preise verstehen sich brutto einschließlich
+der gesetzlichen Mehrwertsteuer in Höhe von 19~\% und umfassen sämtliche
+zur Leistungserbringung erforderlichen Aufwendungen, insbesondere
+Personalkosten des internen Projektteams, Honorare und Werkvertragsleistungen
+externer Spezialisten, Aufwendungen für den externen Penetrationstest,
+Hosting- und Betriebskosten der Cloud-Infrastruktur während der vereinbarten
+Projektlaufzeit, Nutzungskosten der eingesetzten KI-Modelle sowie Reise-
+und Sachkosten. Der Angebotspreis gilt als Festpreis für die gesamte
+Projektlaufzeit.
+
+\paragraph{Zahlungsbedingungen}
+Die Abrechnung erfolgt auf Grundlage der in Abschnitt~5.2 dargestellten
+meilensteinbezogenen Zahlungslogik. Die konkrete Verteilung der
+Teilzahlungen wird zu Projektbeginn gemeinsam mit der Universitätsstadt
+Tübingen festgelegt und an den verabschiedeten Projektplan angepasst.
+Das Zahlungsziel beträgt 30~Tage netto ab Rechnungsstellung.
+
+\paragraph{Gültigkeit}
+Das Angebot ist 30~Tage ab Angebotsdatum bindend.
+
+\paragraph{Vertragsgrundlage}
+Als Vertragsgrundlage wird der EVB-IT Erstellungsvertrag AGIL vorgeschlagen,
+da Gegenstand des Vorhabens die Erstellung einer abnahmefähigen
+Weiterentwicklung von KIWo mit Werkscharakter ist und die Leistungserbringung
+gemäß Kapitel~5 in iterativen Entwicklungs- und Abstimmungsschleifen
+erfolgt. Alternative Vertragsformen können auf Wunsch der Universitätsstadt
+Tübingen geprüft und im gegenseitigen Einvernehmen vereinbart werden.
+
+\paragraph{Auftragsverarbeitung}
+Für das Vorhaben wird zwischen der Universitätsstadt Tübingen und der
+OpenAdvo UG (haftungsbeschränkt) eine neue Vereinbarung zur Auftrags-
+verarbeitung gemäß Art.~28 DSGVO geschlossen, die den erweiterten
+Leistungsumfang von KIWo~2.0, die einzubeziehenden Datenkategorien, die
+eingesetzten KI-Modelle sowie die beteiligten Subunternehmer berücksichtigt.
+Der Abschluss erfolgt vor Beginn der Verarbeitung personenbezogener Daten
+im Rahmen des Folgeprojekts.
+
+\paragraph{Gewährleistung}
+Für die erbrachten Werkleistungen gelten die gesetzlichen Gewährleistungs-
+regelungen sowie ergänzend die Regelungen des EVB-IT Erstellungsvertrags
+AGIL. Die Gewährleistungsfrist beträgt 24~Monate ab erfolgter Abnahme der
+jeweiligen Leistung.
+
+\paragraph{Nutzungsrechte}
+Die Universitätsstadt Tübingen erhält an den im Rahmen des Vorhabens
+erbrachten Werkleistungen ein einfaches, nicht übertragbares und nicht
+unterlizenzierbares, zeitlich und örtlich unbeschränktes Nutzungsrecht für
+eigene behördliche Zwecke im Kontext der Wohngeldbearbeitung. Die Nutzung
+der entwickelten KIWo-Version erfolgt ohne zusätzliche Lizenzgebühren oder
+nutzungsabhängige Abgaben an die OpenAdvo UG; laufende Betriebs-, Hosting-,
+Wartungs-, Support- und Weiterentwicklungsleistungen sind hiervon nicht
+umfasst und werden bei Bedarf gesondert vereinbart. Die Rechte an bereits
+bestehenden KIWo-Standardkomponenten sowie an von Dritten beigesteuerten
+Komponenten verbleiben bei der OpenAdvo UG beziehungsweise den jeweiligen
+Rechteinhabern; die Universitätsstadt Tübingen erhält hierfür ein einfaches
+Nutzungsrecht im vereinbarten Einsatzkontext. Soweit Open-Source-Komponenten
+enthalten sind, gelten ergänzend die jeweiligen Lizenzbedingungen der
+Komponenten.
+
+% ============================================================
+\chapter{Über OpenAdvo}
+% ============================================================
+
+Die OpenAdvo UG (haftungsbeschränkt) entwickelt KI-gestützte Lösungen für
+die öffentliche Verwaltung mit dem Schwerpunkt auf rechtssicherer,
+datenschutzkonformer und barrierearmer Umsetzung digitaler
+Verwaltungsleistungen. Das interne Projektteam wird ergänzt durch etablierte
+Partner: IONOS SE (Cloud-Infrastruktur, ISO~27001, BSI~C5), Mistral AI
+(KI-Modelle, SOC~2 Type~II, ISO~27001) sowie die DSN Group (Datenschutz,
+IT-Sicherheit, Audits, ISO~27001, IT-Grundschutz).
+
+\section{Referenzen}
+
+\paragraph{KIWo -- Universitätsstadt Tübingen, Tech Fellowship 2025/2026}
+Entwicklung und Pilotierung des KI-gestützten Wohngeldantragsprozesses; das
+vorliegende Angebot baut unmittelbar auf den Erkenntnissen dieser
+Zusammenarbeit auf.
+
+\medskip\noindent
+Weitere Gespräche werden derzeit mit den Städten Hürth und Germering geführt.
+
+% ============================================================
+\chapter*{Anhang: Eigenerklärungen}
+\addcontentsline{toc}{chapter}{Anhang: Eigenerklärungen}
+% ============================================================
+
+Die OpenAdvo UG (haftungsbeschränkt) erklärt im Rahmen dieses Angebots
+gegenüber der Universitätsstadt Tübingen rechtsverbindlich:
+
+\begin{enumerate}[label=\textbf{\arabic*.}, leftmargin=2em, itemsep=1em]
+
+  \item \textbf{Tariftreue und Mindestentgelt nach LTMG BW}\\
+    Die OpenAdvo UG (haftungsbeschränkt) verpflichtet sich, ihren
+    Beschäftigten sowie den Beschäftigten eingesetzter Nachunternehmer
+    mindestens das nach dem Landestariftreue- und Mindestlohngesetz
+    Baden-Württemberg (LTMG~BW) maßgebliche Mindeststundenentgelt zu zahlen
+    und einschlägige tarifvertragliche Regelungen einzuhalten.
+
+  \item \textbf{Keine Ausschlussgründe und ordnungsgemäße Abgabenabführung}\\
+    Es liegen keine zwingenden Ausschlussgründe nach \S\,123 GWB und keine
+    fakultativen Ausschlussgründe nach \S\,124 GWB vor.
+
+    Steuern, Sozialversicherungsbeiträge und Beiträge zu den gesetzlichen
+    Unfallversicherungsträgern werden ordnungsgemäß und fristgerecht
+    abgeführt. Entsprechende Unbedenklichkeitsbescheinigungen können auf
+    Anforderung der Universitätsstadt Tübingen beigebracht werden.
+
+  \item \textbf{Ergänzende Anlagen}\\
+    Die detaillierte Kostenkalkulation zu den drei Leistungsvarianten ist
+    diesem Angebot als separate Anlage als PDF-Datei (.pdf) beigefügt.
+    Die Anlage enthält die nachvollziehbare Aufschlüsselung der Personal-,
+    Sach- und Fremdleistungskosten je Variante und dient als Grundlage für
+    die in Kapitel~6 dargestellten Gesamtpreise.
+
+\end{enumerate}
+
+\vfill
+\noindent
+Köln, den 18.05.2026
+
+\bigskip\bigskip
+\noindent
+\rule{6cm}{0.4pt}\\
+Franz Schwärzler\\
+OpenAdvo UG (haftungsbeschränkt)
 
 \end{document}
