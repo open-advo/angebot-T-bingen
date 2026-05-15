@@ -1,14 +1,19 @@
 **Auftraggeber:** Universitätsstadt Tübingen
+Am Markt 1, D-72070 Tübingen
+Telefon 07071 204-0, Fax 07071 204-41777
+E-Mail: stadt@tuebingen.de
 
-**Auftragnehmer:** OpenAdvo UG (haftungsbeschränkt) (i.G) 
+**Auftragnehmer:** OpenAdvo UG (haftungsbeschränkt) i. G.
 
-**Anschrift:** Weyertal 109, 50931 Köln 
+**Anschrift:** Weyertal 109, 50931 Köln
 
 **Geschäftsführung:** Simon Ebeling
 
-**Angebotsdatum:** 18.05.2026 
+**E-Mail:** kontakt@openadvo.com
 
-**Gültigkeit:** 30 Tage ab Angebotsdatum 
+**Angebotsdatum:** 18.05.2026
+
+**Gültigkeit:** 30 Tage ab Angebotsdatum
 
 **Ansprechpartner:** Franz Schwärzler OpenAdvo UG, Leo Reimers Projektleitung KIWo 2.0
 
@@ -28,7 +33,7 @@ Wir freuen uns auf die Fortsetzung der vertrauensvollen Zusammenarbeit.
 
 Mit freundlichen Grüßen
 
-Franz Schwärzler 
+Simon Ebeling 
 
 OpenAdvo UG (haftungsbeschränkt)
 
@@ -226,9 +231,9 @@ Die Mitwirkung dient dazu, KIWo 2.0 realitätsnah an der Verwaltungspraxis auszu
 
 Die in Kapitel 4 ausgewiesenen Preise verstehen sich brutto einschließlich der gesetzlichen Mehrwertsteuer in Höhe von 19 Prozent und umfassen sämtliche zur Leistungserbringung erforderlichen Aufwendungen, insbesondere Personalkosten des internen Projektteams, Honorare und Werkvertragsleistungen externer Spezialisten, Aufwendungen für den externen Penetrationstest, Hosting- und Betriebskosten der Cloud-Infrastruktur während der vereinbarten Projektlaufzeit, Nutzungskosten der eingesetzten KI-Modelle sowie Reise- und Sachkosten. Der Angebotspreis gilt als Festpreis für die gesamte Projektlaufzeit.
 
-**Zahlungsbedingungen:** Die Abrechnung erfolgt auf Grundlage der in Abschnitt 5.2 dargestellten meilensteinbezogenen Zahlungslogik. Die konkrete Verteilung der Teilzahlungen wird zu Projektbeginn gemeinsam mit der Universitätsstadt Tübingen festgelegt und an den verabschiedeten Projektplan angepasst. Das Zahlungsziel beträgt 30 Tage netto ab Rechnungsstellung.
+**Zahlungsbedingungen:** Die Abrechnung erfolgt auf Grundlage der in Abschnitt 5.2 dargestellten meilensteinbezogenen Zahlungslogik. Die konkrete Verteilung der Teilzahlungen wird zu Projektbeginn gemeinsam mit der Universitätsstadt Tübingen festgelegt und an den verabschiedeten Projektplan angepasst. Das Zahlungsziel beträgt 30 Tage ab Rechnungsstellung.
 
-**Gültigkeit des Angebots:** Das Angebot ist 30 Tage ab Angebotsdatum bindend.
+**Gültigkeit des Angebots:** Das Angebot ist 30 Tage ab Angebotsdatum gültig.
 
 **Vertragsgrundlage:** Als Vertragsgrundlage wird der EVB-IT Erstellungsvertrag AGIL vorgeschlagen, da Gegenstand des Vorhabens die Erstellung einer abnahmefähigen Weiterentwicklung von KIWo mit Werkscharakter ist und die Leistungserbringung gemäß Kapitel 5 in iterativen Entwicklungs- und Abstimmungsschleifen mit fachlichen Nachschärfungen aus Test- und Praxisrückmeldungen erfolgt. Alternative Vertragsformen können auf Wunsch der Universitätsstadt Tübingen geprüft und im gegenseitigen Einvernehmen vereinbart werden.
 
@@ -252,17 +257,21 @@ Die OpenAdvo UG (haftungsbeschränkt) entwickelt KI-gestützte Lösungen für di
 
 Die OpenAdvo UG (haftungsbeschränkt) erklärt im Rahmen dieses Angebots gegenüber der Universitätsstadt Tübingen rechtsverbindlich:
 
-### 1. Tariftreue und Mindestentgelt nach LTMG BW
+### 1. Gesellschaftsrechtlicher Status
+
+Die OpenAdvo UG (haftungsbeschränkt) i. G. befindet sich derzeit im Gründungsprozess. Die notarielle Beurkundung des Gesellschaftsvertrages ist am 20.04.2026 erfolgt; die Eintragung in das Handelsregister ist beantragt bzw. wird in Kürze erfolgen. Der Handelsregisterauszug wird unverzüglich nach Eintragung nachgereicht.
+
+### 2. Tariftreue und Mindestentgelt nach LTMG BW
 
 Die OpenAdvo UG (haftungsbeschränkt) verpflichtet sich, ihren Beschäftigten sowie den Beschäftigten eingesetzter Nachunternehmer mindestens das nach dem Landestariftreue- und Mindestlohngesetz Baden-Württemberg (LTMG BW) maßgebliche Mindeststundenentgelt zu zahlen und einschlägige tarifvertragliche Regelungen einzuhalten.
 
-### 2. Keine Ausschlussgründe und ordnungsgemäße Abgabenabführung
+### 3. Keine Ausschlussgründe und ordnungsgemäße Abgabenabführung
 
 Es liegen keine zwingenden Ausschlussgründe nach § 123 GWB und keine fakultativen Ausschlussgründe nach § 124 GWB vor.
 
 Steuern, Sozialversicherungsbeiträge und Beiträge zu den gesetzlichen Unfallversicherungsträgern werden ordnungsgemäß und fristgerecht abgeführt. Entsprechende Unbedenklichkeitsbescheinigungen können auf Anforderung der Universitätsstadt Tübingen beigebracht werden.
 
-### 3. Ergänzende Anlagen
+### 4. Ergänzende Anlagen
 
 Die detaillierte Kostenkalkulation zu den drei Leistungsvarianten ist diesem Angebot als separate Anlage als PDF-Datei (.pdf) beigefügt. Die Anlage enthält die nachvollziehbare Aufschlüsselung der Personal-, Sach- und Fremdleistungskosten je Variante und dient als Grundlage für die in Kapitel 4 dargestellten Gesamtpreise.
 
@@ -270,4 +279,4 @@ Die detaillierte Kostenkalkulation zu den drei Leistungsvarianten ist diesem Ang
 
 *Köln, den 18.05.2026*
 
-*Franz Schwärzler, OpenAdvo UG (haftungsbeschränkt)
+*Simon Ebeling, OpenAdvo UG (haftungsbeschränkt)
