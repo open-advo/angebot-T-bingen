@@ -252,7 +252,6 @@ Die OpenAdvo UG (haftungsbeschränkt) entwickelt KI-gestützte Lösungen für di
 
 ---
 
-
 ## Anhang: Eigenerklärungen
 
 Die OpenAdvo UG (haftungsbeschränkt) erklärt im Rahmen dieses Angebots gegenüber der Universitätsstadt Tübingen rechtsverbindlich:
@@ -267,8 +266,12 @@ Es liegen keine zwingenden Ausschlussgründe nach § 123 GWB und keine fakultati
 
 Steuern, Sozialversicherungsbeiträge und Beiträge zu den gesetzlichen Unfallversicherungsträgern werden ordnungsgemäß und fristgerecht abgeführt. Entsprechende Unbedenklichkeitsbescheinigungen können auf Anforderung der Universitätsstadt Tübingen beigebracht werden.
 
+### 3. Ergänzende Anlagen
+
+Die detaillierte Kostenkalkulation zu den drei Leistungsvarianten ist diesem Angebot als separate Anlage im Excel-Format (.xlsx) beigefügt. Die Anlage enthält die nachvollziehbare Aufschlüsselung der Personal-, Sach- und Fremdleistungskosten je Variante und dient als Grundlage für die in Kapitel 6 dargestellten Gesamtpreise.
+
 ---
 
 *Köln, den 18.05.2026*
 
-*Franz Schwärzler, OpenAdvo UG (haftungsbeschränkt)<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"ac6feaa1-0e68-4e7d-a33c-c0b4cff9577d"}' -->*
+*Franz Schwärzler, OpenAdvo UG (haftungsbeschränkt)
