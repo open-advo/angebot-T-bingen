@@ -2,47 +2,141 @@
 \chapter{Vorgehen, Zeitplan und Projektorganisation}
 % ============================================================
 
-Die Leistungserbringung erfolgt nach dem V-Modell~XT in der Projekttypvariante \enquote{AN-Projekt mit Weiterentwicklung} unter Einbindung agiler Entwicklungspraktiken.
+Die Leistungserbringung erfolgt in mehreren aufeinander aufbauenden
+Projektphasen. Der konkrete Phasen- und Meilensteinplan wird nach Auswahl
+der Leistungsvariante gemeinsam mit der Universitätsstadt Tübingen
+finalisiert und im Projekthandbuch dokumentiert.
+
+Das Projekt orientiert sich am V-Modell~XT in der Projekttypvariante
+\enquote{AN-Projekt mit Weiterentwicklung} und verbindet dessen strukturierte
+Phasen-, Rollen- und Qualitätssicherungslogik mit einer iterativen Umsetzung
+in regelmäßigen Entwicklungs- und Abstimmungsschleifen.
 
 \section{Projektphasen und Meilensteine}
 
-\paragraph{Phase 1 -- Konzeption und Umsetzung}
-Detailspezifikation, Entwicklung der Funktionsbausteine, Vorbereitung der Testumgebung. Meilensteine: Freigabe Feinkonzept (M\,1), testf\"ahige Systemversion nach Sicherheitspr\"ufung (M\,2).
+\paragraph{P1 -- Grundlagen und Konzeption (ca. Monat 1)}
+Aktualisierung der Systemarchitektur, Erweiterung der Entscheidungslogik und
+des Nutzerflusses, Berücksichtigung relevanter Personengruppen und
+Haushaltskonstellationen sowie Erarbeitung der Datenschutz-, Compliance-
+und UX-Grundlagen.\\
+\textbf{Meilenstein 1: Konzeptionsgrundlage abgestimmt}
 
-\paragraph{Phase 2 -- Test- und Pilotbetrieb}
-Strukturierter Testbetrieb mit Antragstellenden, Verwaltung und Beratungsstellen. Dauer: 2 Monate (Transformation) bzw. 1 Monat (Konsolidierung, Fundament). Meilenstein: Abschluss Pilotbetrieb (M\,3).
+\paragraph{P2 -- Review und Integration (ca. Monat 2)}
+Review von Systemarchitektur und Entscheidungslogik, Integration zentraler
+Logikbestandteile in KIWo, UX-Update sowie frühe Qualitätssicherung durch
+ein Schwachstellen-Screening.\\
+\textbf{Meilenstein 2: KIWo grundsätzlich nutzbar}
 
-\paragraph{Phase 3 -- Evaluation und Abschluss}
-Auswertung Pilotdaten, Abschlussdokumentation, formale Abnahme. Meilensteine: \"Ubergabe Abschlussbericht (M\,4), Abnahme Gesamtleistung (M\,5).
+\paragraph{P3 -- Begleitete Tests und Weiterentwicklung (ca. Monat 3 bis 4)}
+Begleitete Nutzertests, Feedback aus Verwaltung und Beratungsstellen,
+Auswertung der Rückmeldungen, fachliche Nachschärfungen, technische
+Weiterentwicklung und Sicherheitsprüfung vor breiterer Nutzung.\\
+\textbf{Meilenstein 3: Begleitete Tests ausgewertet und System weiterentwickelt}\\
+\textbf{Meilenstein 4: Sicherheitsprüfung vor breiterer Nutzung abgeschlossen}
+
+\paragraph{P4 -- Stabilisierung und Onboarding (ca. Monat 5)}
+Nacharbeiten aus den begleiteten Tests, Bug-Fixes, Stabilisierung der
+Systemversion und Vorbereitung der Testgruppen. In dieser Phase werden
+grundsätzlich keine neuen Kernfunktionen aufgenommen.\\
+\textbf{Meilenstein 5: Breiterer Testbetrieb vorbereitet}
+
+\paragraph{P5 -- Nutzertests, Evaluation und Abschluss (ca. Monat 6 bis 7)}
+Durchführung des Testbetriebs, Bearbeitung akuter technischer Probleme,
+Sammlung und Auswertung von Evaluationsdaten sowie Erstellung der
+Abschlussdokumentation.\\
+\textbf{Meilenstein 6: Evaluation und Abschlussbericht vorgelegt}
 
 \section{Auszahlungskonzept}
 
-\begin{tabularx}{\textwidth}{@{} X r @{}}
+Die Auszahlung erfolgt meilensteinbezogen. Die genaue Ausgestaltung wird
+nach Auswahl der Leistungsvariante gemeinsam festgelegt. Die folgende
+Struktur dient als Vorschlag für eine nachvollziehbare Auszahlung entlang
+prüfbarer Projektstände.
+
+\begin{tabularx}{\textwidth}{@{} X X r @{}}
   \toprule
-  \tblhead{Auszahlungspunkt} & \tblhead{Anteil} \\
+  \tblhead{Zahlungszeitpunkt} & \tblhead{Nachweisbarer Auslöser} & \tblhead{Anteil} \\
   \midrule
-  Projektbeginn (Anzahlung) & 20~\% \\
-  Freigabe Feinkonzept (M\,1) & 15~\% \\
-  Testf\"ahige Systemversion (M\,2) & 25~\% \\
-  Erfolgreicher Pilotbetrieb (M\,3) & 20~\% \\
-  \"Ubergabe Abschlussbericht (M\,4) & 10~\% \\
-  Abnahme Gesamtleistung (M\,5) & 10~\% \\
+  Projektstart
+    & Beauftragung erfolgt; Projekt ist organisatorisch gestartet und
+      die Konzeptionsphase beginnt.
+    & 25~\% \\[0.4em]
+  Konzeptionsgrundlage abgestimmt
+    & Systemarchitektur, Entscheidungslogik, Nutzerfluss,
+      Datenschutz-/Compliance-Grundlagen und UX-Grundlage liegen als
+      abgestimmter Arbeitsstand vor.
+    & 20~\% \\[0.4em]
+  KIWo grundsätzlich nutzbar
+    & Zentrale Logikbestandteile sind integriert; ein lauffähiger
+      KIWo-Stand kann demonstriert und für begleitete Tests genutzt werden.
+    & 25~\% \\[0.4em]
+  Breiterer Testbetrieb vorbereitet
+    & Begleitete Tests wurden ausgewertet, wesentliche Nacharbeiten
+      umgesetzt, Sicherheitsprüfung abgeschlossen und
+      Onboarding-Unterlagen vorbereitet.
+    & 20~\% \\[0.4em]
+  Projekt abgeschlossen
+    & Testbetrieb, Evaluation und Abschlussdokumentation sind
+      abgeschlossen; Ergebnisse sind für die Bewertung von Nutzen,
+      Machbarkeit und Skalierung aufbereitet.
+    & 10~\% \\
   \midrule
-  \textbf{Gesamt} & \textbf{100~\%} \\
+  \textbf{Gesamt} & & \textbf{100~\%} \\
   \bottomrule
 \end{tabularx}
 
-\section{Qualit\"atssicherung und Projektorganisation}
+\section{Qualitätssicherung und Projektorganisation}
 
-Die Qualit\"atssicherung umfasst Code-Reviews, automatisierte Tests und einen externen Penetrationstest. Die Projektleitung ist in T\"ubingen ans\"assig; Systemarchitektur und Entwicklung sind in K\"oln kolokiert.
+Die Qualitätssicherung im Projekt KIWo~2.0 verfolgt das Ziel, die fachliche
+Korrektheit, technische Stabilität, Sicherheit und Nutzbarkeit des Systems
+über den gesamten Projektverlauf hinweg systematisch abzusichern. Sie ist
+als kontinuierlicher, projektbegleitender Prozess angelegt und orientiert
+sich an den Vorgaben des V-Modell~XT.
 
-\section{Mitwirkung der Universit\"atsstadt T\"ubingen}
+Auf technischer Ebene umfasst die Qualitätssicherung insbesondere
+systematische Code-Reviews, automatisierte Tests sowie ein fortlaufendes
+Schwachstellen-Screening. Ergänzend wird vor der breiteren Nutzung ein
+externer Penetrationstest durchgeführt, einschließlich eines Re-Tests zur
+Verifikation der behobenen Findings. Damit wird sichergestellt, dass
+identifizierte Schwachstellen nicht nur dokumentiert, sondern auch
+nachweislich geschlossen werden.
+
+Auf fachlicher und nutzerorientierter Ebene wird die Qualitätssicherung
+durch die Begleitung der Test- und Pilotbetriebsphase ergänzt. Hierzu
+gehören strukturierte Nutzertests, die Einbindung von Antragstellenden,
+Mitarbeitenden der Verwaltung sowie Beratungsstellen und die systematische
+Erhebung und Auswertung von Praxisrückmeldungen.
+
+Risiken werden im Rahmen des Projektmanagements fortlaufend identifiziert,
+bewertet und gemeinsam mit der Universitätsstadt Tübingen abgestimmt. Eine
+ausführliche und variantenspezifische Ausarbeitung der Qualitätssicherungs-
+maßnahmen sowie des Risikomanagements erfolgt im Rahmen der
+Projektinitialisierungsphase und wird Bestandteil des Projekthandbuchs.
+
+Die Projektleitung ist in Tübingen ansässig und steht der Universitätsstadt
+als örtliche Schnittstelle zur Verfügung. Systemarchitektur, Qualitäts-
+sicherung und Entwicklung sind in Köln kolokiert. Externe Spezialisten
+werden in den Bereichen UX-Design, Datenschutz, IT-Sicherheit und KI-Recht
+eingebunden.
+
+\section{Mitwirkung der Universitätsstadt Tübingen}
+
+Die Durchführung des Folgeprojekts setzt eine enge, pragmatische
+Zusammenarbeit mit der Universitätsstadt Tübingen voraus. Die Mitwirkung
+orientiert sich an der bewährten Zusammenarbeit aus der bisherigen
+Projektphase und wird nach Auswahl der Leistungsvariante konkret abgestimmt.
+
+Zentral ist insbesondere die fachliche Einbindung der Wohngeldstelle.
+Diese unterstützt nach Möglichkeit bei der Erweiterung der
+Entscheidungslogik auf weitere Personengruppen und Haushaltskonstellationen,
+bei fachlichen Reviews der umgesetzten Logik sowie bei der Bewertung
+praxisnaher Testfälle.
+
+Darüber hinaus unterstützt die Stadt das Projekt insbesondere durch:
 
 \begin{itemize}
-  \item \textbf{Fachliche Begleitung:} Benennung fachlicher Ansprechpartner f\"ur wohngeldrechtliche Fragen.
-  \item \textbf{Testf\"alle und Beispieldaten:} Zugriff auf anonymisierte Beispielff\"alle.
-  \item \textbf{Einbindung der Wohngeldstelle:} Mitwirkung bei Nutzertests und Evaluationsworkshops.
-  \item \textbf{Ansprache von Antragstellenden und Beratungsstellen:} Vermittlung des Zugangs f\"ur den Pilotbetrieb.
-  \item \textbf{Infrastruktur und Genehmigungen:} Kl\"arung datenschutzrechtlicher Rahmenbedingungen.
-  \item \textbf{Regelm\"a\ss{}ige Abstimmungen:} Teilnahme an Jour-fixe und meilensteinbezogenen Abnahmen.
+  \item Vermittlung zu Beratungsstellen für den Testbetrieb.
+  \item Nutzung geeigneter Informationskanäle zur Ansprache potenzieller Testnutzer:innen.
+  \item Teilnahme an projektbezogenen Abstimmungen und Lenkungsentscheidungen.
+  \item Notwendige organisatorische und rechtliche Abstimmungen, etwa zu Datenschutz, Auftragsverarbeitung und Testbetrieb.
 \end{itemize}
