@@ -82,7 +82,7 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\raisebox{-0.3\height}{\includegraphics[height=1cm]{OpenAdvoLogo.png}}}
+\fancyhead[L]{\raisebox{-0.3\height}{\includegraphics[height=1cm]{OpenAdvoLogo.png}}\hspace{0.6em}\raisebox{0.2em}{\sffamily\bfseries\color{primarycolor}OpenAdvo UG}}
 \fancyhead[R]{\small\sffamily\textcolor{lightgray}{Angebot KIWo 2.0\\Universitätsstadt Tübingen}}
 \fancyfoot[L]{\small\sffamily\textcolor{lightgray}{OpenAdvo UG (haftungsbeschränkt)}}
 \fancyfoot[R]{\small\sffamily\textcolor{lightgray}{Seite \thepage}}
@@ -147,6 +147,13 @@
 
 \begin{titlepage}
 \thispagestyle{empty}
+
+% --- Logo absolut positioniert links oben (verschiebt keinen anderen Inhalt) ---
+\begin{tikzpicture}[remember picture, overlay]
+  \node[anchor=north west, inner sep=0pt]
+    at ([xshift=3cm,yshift=-2cm]current page.north west)
+    {\includegraphics[height=1.5cm]{OpenAdvoLogo.png}};
+\end{tikzpicture}
 
 % --- Briefkopf ---
 \noindent
