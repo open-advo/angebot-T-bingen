@@ -53,7 +53,7 @@ Die Projektlaufzeit beträgt je nach gewählter Leistungsvariante voraussichtlic
 | -------- | -------- | -------- |
 | **Mindestumfang** | Fokussierte Weiterentwicklung der zentralen KIWo-Grundfunktionen mit einmonatigem Testbetrieb. Die Variante ermöglicht eine abgesicherte Fortführung des Projekts, setzt aber bei Integrationsperspektive, Smartphone-Optimierung und dynamischem Antragsaufbau bewusst auf optionale Bestandteile. Sie eignet sich damit vor allem für eine begrenzte Weiterentwicklung mit kontrolliertem Kostenrahmen. | **50.045,00 €** |
 | **Kernumfang** | Ausgewogener Leistungsumfang für eine substanzielle Weiterentwicklung und realitätsnahe Pilotierung. Enthalten sind insbesondere Plausibilitäts- und Vollständigkeitsprüfung, Anschlussfähigkeit an bestehende Verwaltungsinfrastruktur, nutzerzentrierte UX-Optimierung, Smartphone-Optimierung und einmonatiger Testbetrieb. Die Stadt entscheidet sich damit für eine belastbare Kernvariante, die zentrale Entwicklungs- und Erkenntnisziele abdeckt, ohne den maximalen Vollumfang zu beauftragen. | **55.131,00 €** |
-| **Vollumfang** | Umfassendste Variante mit erweitertem Pilotierungs- und Skalierungsanspruch. Zusätzlich zum gemeinsamen Leistungsumfang umfasst sie insbesondere vertiefte UX-Konzeption, vollständige externe UX-Begleitung, umfassende Plausibilitäts- und Vollständigkeitsprüfung, dynamischen Antragsaufbau auf Law-as-Code-Basis, sowie einen zweimonatigen Testbetrieb mit regelmäßiger Vor-Ort-Begleitung durch das Entwicklungsteam. Die Stadt entscheidet sich damit für die Variante mit der höchsten Aussagekraft für Verstetigung, Integration und mögliche Skalierung. | **68.302,00 €** |
+| **Vollumfang** | Umfassendste Variante mit erweitertem Pilotierungs- und Skalierungsanspruch. Zusätzlich zum gemeinsamen Leistungsumfang umfasst sie insbesondere vertiefte UX-Konzeption, vollständige externe UX-Begleitung, umfassende Plausibilitäts- und Vollständigkeitsprüfung, dynamischen Antragsaufbau auf Law-as-Code-Basis, sowie einen zweimonatigen Testbetrieb mit regelmäßiger Vor-Ort-Begleitung durch das Entwicklungsteam. Die Stadt entscheidet sich damit für die Variante mit der höchsten Aussagekraft für Verstetigung, Integration und mögliche Skalierung. | **73.840,00 €** |
 <!-- adf:table attrs='{"width":760}' -->
 
 Die ausführliche Beschreibung der enthaltenen Leistungen findet sich in Kapitel 4.
@@ -137,13 +137,13 @@ Zusätzlich zum gemeinsamen Leistungsumfang umfasst die Variante **Vollumfang**:
 - **Dynamischer Antragsaufbau auf Basis eines Law-as-Code-Ansatzes** zur Reduzierung der Bearbeitungszeit. Die fachliche Zielrichtung umfasst die Abbildung relevanter Bestimmungen des Wohngeldgesetzes als ausführbare Logik, eine Echtzeit-Vorprüfung, eine erklärbare Verarbeitung sowie eine nachvollziehbare Referenzierung auf einschlägige Gesetzespassagen.
 - **Testbetrieb mit zweimonatiger Laufzeit** unter Beteiligung von Antragstellenden, Mitarbeitenden der Verwaltung sowie Beratungsstellen, einschließlich begleiteter Nutzertests und strukturierter Praxisrückmeldungen.
 - **Regelmäßige Begleitung vor Ort in Tübingen** durch das Kölner Entwicklungsteam, einschließlich Systemdemonstrationen, persönlicher Abstimmungen und fachlichen Austauschs.
-- **P<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"52c5ac82-91a6-4732-85ea-6ade9e223cc4"}' -->****rofessioneller Penetrationstest:<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"53611a57-97c4-42a5-b99b-4a810f0abb26"}' --><!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"52c5ac82-91a6-4732-85ea-6ade9e223cc4"}' -->** Erweiterung des vorgesehenen fokussierten Sicherheitschecks zu einem vollständigen externen Penetrationstest mit vertiefter Prüfung, Findings-Dokumentation und Maßnahmenempfehlungen.<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"53611a57-97c4-42a5-b99b-4a810f0abb26"}' --><!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"52c5ac82-91a6-4732-85ea-6ade9e223cc4"}' -->
+- **Professioneller Penetrationstest:** Erweiterung des vorgesehenen fokussierten Sicherheitschecks zu einem vollständigen externen Penetrationstest mit vertiefter Prüfung, Findings-Dokumentation und Maßnahmenempfehlungen.
 
 ### 4.5 Vergleich der Varianten
 
 | Leistungsbereich | **Mindestumfang** | **Kernumfang** | **Vollumfang** |
 | -------- | -------- | -------- | -------- |
-| **Preis brutto** | 50.045 € | 55.131 € | 68.302 € |
+| **Preis brutto** | 50.045 € | 55.131 € | 73.840 € |
 | **Gemeinsamer Leistungsumfang** | Enthalten | Enthalten | Enthalten |
 | **Plausibilitäts- und Vollständigkeitsprüfung** | Stark vereinfacht | Normal | Umfassend |
 | **Anschlussfähigkeit an Verwaltungsinfrastruktur / Fachverfahren** | Nicht enthalten | Enthalten | Enthalten |
