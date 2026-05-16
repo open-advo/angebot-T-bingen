@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{report}
+\documentclass[11pt,a4paper,openany]{report}
 
 % --- Kodierung & Sprache ---
 \usepackage[T1]{fontenc}
@@ -31,6 +31,7 @@
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{tabularx}
+\usepackage{xltabular}
 \usepackage{array}
 \usepackage{xcolor}
 \usepackage{colortbl}
@@ -334,7 +335,7 @@ Skalierungsperspektive.
       regelmäßiger Vor-Ort-Begleitung durch das Entwicklungsteam. Die
       Stadt entscheidet sich damit für die Variante mit der höchsten
       Aussagekraft für Verstetigung, Integration und mögliche Skalierung.
-    & 68.302{,}00~\texteuro{} \\
+    & 73.840{,}00~\texteuro{} \\
   \bottomrule
 \end{tabularx}}
 
@@ -412,7 +413,7 @@ Folgende Leistungen sind in allen drei Varianten gleichermaßen enthalten:
   \item \textbf{Digitale Vorprüfung mit Anspruchsindikation} als unterstützende, ausdrücklich nicht rechtsverbindliche Einschätzung.
   \item \textbf{KI-gestützte Unterstützung im Antragsprozess}, insbesondere bei Eingaben, Spracheingabe, Verständnisfragen, dem Hochladen von Nachweisen sowie bei typischen Unsicherheiten während der Antragstellung.
   \item \textbf{Automatisierte Auswertung hochgeladener Nachweise} mit Extraktion relevanter Angaben und strukturierter Übernahme ausgewählter Daten in den Antrag.
-  \item \textbf{Datenschutz-, Sicherheits- und Compliance-Leistungen}, insbesondere DSGVO-Grundkonzept, Prüfung der Konformität mit der EU-KI-Verordnung, Schwachstellen-Screening sowie ein Penetrationstest vor breiterer Nutzung.
+  \item \textbf{Datenschutz-, Sicherheits- und Compliance-Leistungen}, insbesondere DSGVO-Grundkonzept, Prüfung der Konformität mit der EU-KI-Verordnung, Schwachstellen-Screening sowie ein fokussierter externer Sicherheitscheck vor breiterer Nutzung zur Identifikation und Priorisierung zentraler Risiken.
   \item \textbf{Technische Stabilisierung und Fehlerbehebung} während der Test- und Nutzungsphase.
   \item \textbf{Evaluation und Abschlussdokumentation}, einschließlich Erhebung und Auswertung von Evaluationsdaten sowie Bewertung von Nutzen, Machbarkeit und Skalierungspotenzial.
   \item \textbf{Roll-out-Perspektive für eine Anschlussphase}, einschließlich zeitlich unbegrenzter Nutzungsmöglichkeit der entwickelten KIWo-Version ohne zusätzliche Lizenzgebühren an OpenAdvo UG; laufende Betriebs- und Folgekosten sind hiervon nicht umfasst.
@@ -443,6 +444,7 @@ Zusätzlich zum gemeinsamen Leistungsumfang umfasst die Variante \textbf{Kernumf
   \item \textbf{Vereinfachter dynamischer Antragsaufbau} für zentrale Standardfälle, einschließlich regelbasierter Nutzerführung; eine vollständige Law-as-Code-Abbildung mit umfassender gesetzlicher Referenzierung ist dem Vollumfang vorbehalten.
   \item \textbf{Testbetrieb mit einmonatiger Laufzeit} unter Beteiligung von Antragstellenden, Mitarbeitenden der Verwaltung sowie Beratungsstellen, einschließlich begleiteter Nutzertests und strukturierter Praxisrückmeldungen.
   \item \textbf{Punktuelle Begleitung vor Ort in Tübingen} durch das Kölner Entwicklungsteam, einschließlich Systemdemonstrationen und fachlichen Austauschs.
+  \item \textbf{Optionaler professioneller Penetrationstest gegen 5.727~\texteuro{} (inkl.\,MwSt.) Aufpreis:} Erweiterung des vorgesehenen fokussierten Sicherheitschecks zu einem vollständigen externen Penetrationstest mit vertiefter Prüfung, Findings-Dokumentation und Maßnahmenempfehlungen.
 \end{itemize}
 
 \section{Variante \textbf{Vollumfang}}
@@ -458,22 +460,25 @@ Zusätzlich zum gemeinsamen Leistungsumfang umfasst die Variante \textbf{Vollumf
   \item \textbf{Dynamischer Antragsaufbau auf Basis eines Law-as-Code-Ansatzes} zur Reduzierung der Bearbeitungszeit. Die fachliche Zielrichtung umfasst die Abbildung relevanter Bestimmungen des Wohngeldgesetzes als ausführbare Logik, eine Echtzeit-Vorprüfung, eine erklärbare Verarbeitung sowie eine nachvollziehbare Referenzierung auf einschlägige Gesetzespassagen.
   \item \textbf{Testbetrieb mit zweimonatiger Laufzeit} unter Beteiligung von Antragstellenden, Mitarbeitenden der Verwaltung sowie Beratungsstellen, einschließlich begleiteter Nutzertests und strukturierter Praxisrückmeldungen.
   \item \textbf{Regelmäßige Begleitung vor Ort in Tübingen} durch das Kölner Entwicklungsteam, einschließlich Systemdemonstrationen, persönlicher Abstimmungen und fachlichen Austauschs.
+  \item \textbf{Professioneller Penetrationstest:} Erweiterung des vorgesehenen fokussierten Sicherheitschecks zu einem vollständigen externen Penetrationstest mit vertiefter Prüfung, Findings-Dokumentation und Maßnahmenempfehlungen.
 \end{itemize}
 
+\needspace{14\baselineskip}
 \section{Vergleich der Varianten}
 
 {\arrayrulecolor{tabrule}\small\setlength{\tabcolsep}{4pt}
-\begin{tabularx}{\textwidth}{@{} >{\raggedright\arraybackslash\bfseries\color{darkgray}}X >{\raggedright\arraybackslash}p{2.7cm} >{\raggedright\arraybackslash}p{2.7cm} >{\raggedright\arraybackslash}p{2.7cm} @{}}
+\begin{xltabular}{\textwidth}{@{} >{\raggedright\arraybackslash\bfseries\color{darkgray}}X >{\raggedright\arraybackslash}p{2.7cm} >{\raggedright\arraybackslash}p{2.7cm} >{\raggedright\arraybackslash}p{2.7cm} @{}}
   \toprule
   \tblhead{\hspace{0.2em}Leistungsbereich}
     & \tblhead{Mindestumfang}
     & \tblhead{Kernumfang}
-    & \tblhead{Vollumfang} \\
+    & \tblhead{Vollumfang} \\*
   \midrule
+  \endhead
   Preis brutto
     & \textbf{50.045~\texteuro{}}
     & \textbf{55.131~\texteuro{}}
-    & \textbf{68.302~\texteuro{}} \\
+    & \textbf{73.840~\texteuro{}} \\
   \tblrowalt Gemeinsamer Leistungsumfang
     & \ja{} Enthalten & \ja{} Enthalten & \ja{} Enthalten \\
   Plausibilitäts- und Vollständigkeitsprüfung
@@ -488,13 +493,17 @@ Zusätzlich zum gemeinsamen Leistungsumfang umfasst die Variante \textbf{Vollumf
     & Mitgestaltend \\
   Smartphone-optimierte Nutzung
     & \nein{} Nicht enthalten & \ja{} Enthalten & \ja{} Enthalten \\
-  \tblrowalt Dynamischer Antragsaufbau (Law-as-Code)
+  \tblrowalt Externe Sicherheitsprüfung
+    & Sicherheitscheck enthalten
+    & Sicherheitscheck enthalten; professioneller Pentest optional +5.727~\texteuro{} (inkl.\,MwSt.)
+    & Professioneller Pentest enthalten \\
+  Dynamischer Antragsaufbau (Law-as-Code)
     & \nein{} Nicht enthalten & Vereinfacht & \ja{} Enthalten \\
-  Testbetrieb mit Antragstellenden, Verwaltung und Beratungsstellen
+  \tblrowalt Testbetrieb mit Antragstellenden, Verwaltung und Beratungsstellen
     & 1~Monat & 1~Monat & 2~Monate \\
-  \tblrowalt Vor-Ort-Besuche Entwickler-Team
+  Vor-Ort-Besuche Entwickler-Team
     & Vereinzelt & Vereinzelt & Regelmäßig \\
-  Technische Stabilisierung \& Bug-Fixing
+  \tblrowalt Technische Stabilisierung \& Bug-Fixing
     & Enthalten (reduziert) & \ja{} Enthalten & \ja{} Enthalten \\
   \midrule
   \rowcolor{tabrowalt}
@@ -503,7 +512,7 @@ Zusätzlich zum gemeinsamen Leistungsumfang umfasst die Variante \textbf{Vollumf
     & Tragfähige Kompromiss\-variante
     & Größte Aussage\-kraft; beste Grund\-lage für An\-schluss\-projekt \\
   \bottomrule
-\end{tabularx}}
+\end{xltabular}}
 
 \section{Abgrenzung}
 
@@ -550,9 +559,11 @@ durch ein Schwachstellen-Screening.\\
 \paragraph{P3 -- Begleitete Tests und Weiterentwicklung, ca. Monat 3 bis 4}
 Begleitete Nutzertests, Feedback aus Verwaltung und Beratungsstellen,
 Auswertung der Rückmeldungen, fachliche Nachschärfungen, technische
-Weiterentwicklung und Sicherheitsprüfung vor breiterer Nutzung.\\
+Weiterentwicklung sowie variantenspezifische externe Sicherheitsprüfung
+(Sicherheitscheck bzw. Penetrationstest gemäß Kapitel~4) vor breiterer
+Nutzung.\\
 \textbf{Meilenstein 3: Begleitete Tests ausgewertet und System weiterentwickelt}\\
-\textbf{Meilenstein 4: Sicherheitsprüfung vor breiterer Nutzung abgeschlossen}
+\textbf{Meilenstein 4: Externe Sicherheitsprüfung vor breiterer Nutzung abgeschlossen}
 
 \paragraph{P4 -- Stabilisierung und Onboarding, ca. Monat 5}
 Nacharbeiten aus den begleiteten Tests, Bug-Fixes, Stabilisierung der
@@ -594,8 +605,8 @@ nachvollziehbare Auszahlung entlang prüfbarer Projektstände.
     & 25~\% \\
   \tblrowalt Breiterer Testbetrieb vorbereitet
     & \cellcolor{tabrowalt} Begleitete Tests wurden ausgewertet, wesentliche Nacharbeiten
-      umgesetzt, Sicherheitsprüfung abgeschlossen und
-      Onboarding-Unterlagen/Testgruppen-Setup vorbereitet.
+      umgesetzt, externe Sicherheitsprüfung (gemäß gewählter Variante)
+      abgeschlossen und Onboarding-Unterlagen/Testgruppen-Setup vorbereitet.
     & \cellcolor{tabrowalt} 20~\% \\
   Projekt abgeschlossen
     & Testbetrieb, Evaluation und Abschlussdokumentation sind
@@ -617,9 +628,12 @@ angelegt und orientiert sich an den Vorgaben des V-Modell~XT.
 
 Auf technischer Ebene umfasst die Qualitätssicherung insbesondere
 systematische Code-Reviews, automatisierte Tests sowie ein fortlaufendes
-Schwachstellen-Screening. Ergänzend wird vor der breiteren Nutzung ein
-externer Penetrationstest durchgeführt, einschließlich eines Re-Tests
-zur Verifikation der behobenen Findings. Damit wird sichergestellt, dass
+Schwachstellen-Screening. Ergänzend wird vor der breiteren Nutzung eine
+externe Sicherheitsprüfung durchgeführt; deren Tiefe richtet sich nach
+der gewählten Variante (fokussierter Sicherheitscheck im Mindest- und
+Kernumfang, vollständiger Penetrationstest im Vollumfang bzw. optional
+im Kernumfang gegen Aufpreis, siehe Kapitel~4). In allen Fällen ist ein
+Re-Test zur Verifikation der behobenen Findings vorgesehen, sodass
 identifizierte Schwachstellen nicht nur dokumentiert, sondern auch
 nachweislich geschlossen werden.
 
@@ -684,7 +698,8 @@ einschließlich der gesetzlichen Mehrwertsteuer in Höhe von
 19~Prozent und umfassen sämtliche zur Leistungserbringung erforderlichen
 Aufwendungen, insbesondere Personalkosten des internen Projektteams,
 Honorare und Werkvertragsleistungen externer Spezialisten, Aufwendungen
-für den externen Penetrationstest, Hosting- und Betriebskosten der
+für die variantenspezifische externe Sicherheitsprüfung (Sicherheitscheck
+bzw. Penetrationstest gemäß Kapitel~4), Hosting- und Betriebskosten der
 Cloud-Infrastruktur während der vereinbarten Projektlaufzeit,
 Nutzungskosten der eingesetzten KI-Modelle sowie Reise- und Sachkosten.
 Der Angebotspreis gilt als Festpreis für die gesamte Projektlaufzeit.

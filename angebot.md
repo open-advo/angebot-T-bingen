@@ -1,7 +1,7 @@
 **Auftraggeber:** Universitätsstadt Tübingen
 Am Markt 1, D-72070 Tübingen
 Telefon 07071 204-0, Fax 07071 204-41777
-E-Mail: stadt@tuebingen.de
+E-Mail: [stadt@tuebingen.de](mailto:stadt@tuebingen.de)
 
 **Auftragnehmer:** OpenAdvo UG (haftungsbeschränkt) i. G.
 
@@ -9,7 +9,7 @@ E-Mail: stadt@tuebingen.de
 
 **Geschäftsführung:** Simon Ebeling
 
-**E-Mail:** kontakt@openadvo.com
+**E-Mail:** [kontakt@openadvo.com](mailto:kontakt@openadvo.com)
 
 **Angebotsdatum:** 18.05.2026
 
@@ -33,7 +33,7 @@ Wir freuen uns auf die Fortsetzung der vertrauensvollen Zusammenarbeit.
 
 Mit freundlichen Grüßen
 
-Simon Ebeling 
+Simon Ebeling
 
 OpenAdvo UG (haftungsbeschränkt)
 
@@ -51,7 +51,7 @@ Die Projektlaufzeit beträgt je nach gewählter Leistungsvariante voraussichtlic
 
 | Variante | Kurzbeschreibung | Gesamtpreis brutto |
 | -------- | -------- | -------- |
-| **Mindestumfang** | Fokussierte Weiterentwicklung der zentralen KIWo-Grundfunktionen mit einmonatigem Testbetrieb. Die Variante ermöglicht eine abgesicherte Fortführung des Projekts, setzt aber bei Integrationsperspektive, Smartphone-Optimierung und dynamischem Antragsaufbau bewusst auf optionale Bestandteile. Sie eignet sich damit vor allem für eine begrenzte Weiterentwicklung mit kontrolliertem Kostenrahmen. | **50.045,00 €<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"601fa43c-ca32-451b-ac86-f0ca4b1bb0c9"}' -->** |
+| **Mindestumfang** | Fokussierte Weiterentwicklung der zentralen KIWo-Grundfunktionen mit einmonatigem Testbetrieb. Die Variante ermöglicht eine abgesicherte Fortführung des Projekts, setzt aber bei Integrationsperspektive, Smartphone-Optimierung und dynamischem Antragsaufbau bewusst auf optionale Bestandteile. Sie eignet sich damit vor allem für eine begrenzte Weiterentwicklung mit kontrolliertem Kostenrahmen. | **50.045,00 €** |
 | **Kernumfang** | Ausgewogener Leistungsumfang für eine substanzielle Weiterentwicklung und realitätsnahe Pilotierung. Enthalten sind insbesondere Plausibilitäts- und Vollständigkeitsprüfung, Anschlussfähigkeit an bestehende Verwaltungsinfrastruktur, nutzerzentrierte UX-Optimierung, Smartphone-Optimierung und einmonatiger Testbetrieb. Die Stadt entscheidet sich damit für eine belastbare Kernvariante, die zentrale Entwicklungs- und Erkenntnisziele abdeckt, ohne den maximalen Vollumfang zu beauftragen. | **55.131,00 €** |
 | **Vollumfang** | Umfassendste Variante mit erweitertem Pilotierungs- und Skalierungsanspruch. Zusätzlich zum gemeinsamen Leistungsumfang umfasst sie insbesondere vertiefte UX-Konzeption, vollständige externe UX-Begleitung, umfassende Plausibilitäts- und Vollständigkeitsprüfung, dynamischen Antragsaufbau auf Law-as-Code-Basis, sowie einen zweimonatigen Testbetrieb mit regelmäßiger Vor-Ort-Begleitung durch das Entwicklungsteam. Die Stadt entscheidet sich damit für die Variante mit der höchsten Aussagekraft für Verstetigung, Integration und mögliche Skalierung. | **68.302,00 €** |
 <!-- adf:table attrs='{"width":760}' -->
@@ -96,7 +96,7 @@ Folgende Leistungen sind in allen drei Varianten gleichermaßen enthalten:
 - **Digitale Vorprüfung mit Anspruchsindikation** als unterstützende, ausdrücklich nicht rechtsverbindliche Einschätzung.
 - **KI-gestützte Unterstützung im Antragsprozess**, insbesondere bei Eingaben, Spracheingabe, Verständnisfragen, dem Hochladen von Nachweisen sowie bei typischen Unsicherheiten während der Antragstellung.
 - **Automatisierte Auswertung hochgeladener Nachweise** mit Extraktion relevanter Angaben und strukturierter Übernahme ausgewählter Daten in den Antrag.
-- **Datenschutz-, Sicherheits- und Compliance-Leistungen**, insbesondere DSGVO-Grundkonzept, Prüfung der Konformität mit der EU-KI-Verordnung, Schwachstellen-Screening sowie ein Penetrationstest vor breiterer Nutzung.
+- **Datenschutz-, Sicherheits- und Compliance-Leistungen**, insbesondere DSGVO-Grundkonzept, Prüfung der Konformität mit der EU-KI-Verordnung, Schwachstellen-Screening sowie ein fokussierter externer Sicherheitscheck vor breiterer Nutzung zur Identifikation und Priorisierung zentraler Risiken.<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"b589faba-4c38-4e1a-9b55-08beb0532c02"}' -->
 - **Technische Stabilisierung und Fehlerbehebung** während der Test- und Nutzungsphase.
 - **Evaluation und Abschlussdokumentation**, einschließlich Erhebung und Auswertung von Evaluationsdaten sowie Bewertung von Nutzen, Machbarkeit und Skalierungspotenzial.
 - **Roll-out-Perspektive für eine Anschlussphase**, einschließlich zeitlich unbegrenzter Nutzungsmöglichkeit der entwickelten KIWo-Version ohne zusätzliche Lizenzgebühren an OpenAdvo UG; laufende Betriebs- und Folgekosten sind hiervon nicht umfasst.
@@ -123,6 +123,7 @@ Zusätzlich zum gemeinsamen Leistungsumfang umfasst die Variante **Kernumfang**:
 - **Vereinfachter dynamischer Antragsaufbau** für zentrale Standardfälle, einschließlich regelbasierter Nutzerführung; eine vollständige Law-as-Code-Abbildung mit umfassender gesetzlicher Referenzierung ist dem Vollumfang vorbehalten.
 - **Testbetrieb mit einmonatiger Laufzeit** unter Beteiligung von Antragstellenden, Mitarbeitenden der Verwaltung sowie Beratungsstellen, einschließlich begleiteter Nutzertests und strukturierter Praxisrückmeldungen.
 - **Punktuelle Begleitung vor Ort in Tübingen** durch das Kölner Entwicklungsteam, einschließlich Systemdemonstrationen und fachlichen Austauschs.
+- **Optionaler professioneller Penetrationstest gegen 5.727 € (inkl. MwSt.) Aufpreis:** Erweiterung des vorgesehenen fokussierten Sicherheitschecks zu einem vollständigen externen Penetrationstest mit vertiefter Prüfung, Findings-Dokumentation und Maßnahmenempfehlungen.
 
 ### 4.4 Variante **Vollumfang**
 
@@ -136,6 +137,7 @@ Zusätzlich zum gemeinsamen Leistungsumfang umfasst die Variante **Vollumfang**:
 - **Dynamischer Antragsaufbau auf Basis eines Law-as-Code-Ansatzes** zur Reduzierung der Bearbeitungszeit. Die fachliche Zielrichtung umfasst die Abbildung relevanter Bestimmungen des Wohngeldgesetzes als ausführbare Logik, eine Echtzeit-Vorprüfung, eine erklärbare Verarbeitung sowie eine nachvollziehbare Referenzierung auf einschlägige Gesetzespassagen.
 - **Testbetrieb mit zweimonatiger Laufzeit** unter Beteiligung von Antragstellenden, Mitarbeitenden der Verwaltung sowie Beratungsstellen, einschließlich begleiteter Nutzertests und strukturierter Praxisrückmeldungen.
 - **Regelmäßige Begleitung vor Ort in Tübingen** durch das Kölner Entwicklungsteam, einschließlich Systemdemonstrationen, persönlicher Abstimmungen und fachlichen Austauschs.
+- **P<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"52c5ac82-91a6-4732-85ea-6ade9e223cc4"}' -->****rofessioneller Penetrationstest:<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"53611a57-97c4-42a5-b99b-4a810f0abb26"}' --><!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"52c5ac82-91a6-4732-85ea-6ade9e223cc4"}' -->** Erweiterung des vorgesehenen fokussierten Sicherheitschecks zu einem vollständigen externen Penetrationstest mit vertiefter Prüfung, Findings-Dokumentation und Maßnahmenempfehlungen.<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"53611a57-97c4-42a5-b99b-4a810f0abb26"}' --><!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"52c5ac82-91a6-4732-85ea-6ade9e223cc4"}' -->
 
 ### 4.5 Vergleich der Varianten
 
@@ -148,11 +150,12 @@ Zusätzlich zum gemeinsamen Leistungsumfang umfasst die Variante **Vollumfang**:
 | **UX-Konzeption und nutzerzentrierte Optimierung** | Eingeschränkt | Verbessert | Stark verbessert |
 | **Externe UX-Begleitung** | Review-/ratgebende Funktion | Review-/ratgebende Funktion | Mitgestaltende Funktion |
 | **Smartphone-optimierte Nutzung** | Nicht enthalten | Enthalten | Enthalten |
-| **Dynamischer Antragsaufbau / Law-as-Code-Optimierung** | Nicht enthalten<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"4d7a5b08-d67d-4f92-9d79-99b6b4da59a9"}' --> | Vereinfacht enthalten | Enthalten |
+| **Externe Sicherheitsprüfung** | Sicherheitscheck enthalten | Sicherheitscheck enthalten; professioneller Pentest optional +5.727 € (inkl. MwSt.) | Professioneller Pentest enthalten |
+| **Dynamischer Antragsaufbau / Law-as-Code-Optimierung** | Nicht enthalten | Vereinfacht enthalten | Enthalten |
 | **Testbetrieb mit Antragstellenden, Verwaltung und Beratungsstellen** | 1 Monat | 1 Monat | 2 Monate |
 | **Vor-Ort-Besuche Entwickler-Team** | Vereinzelt | Vereinzelt | Regelmäßig |
-| **Technische Stabilisierung und Bug-Fixing** | Enthalten, aber mit reduziertem Gesamtaufwand | Enthalten | Enthalten |
-| **Risiko / fachliche Einordnung** | Schlanke Mindestvariante mit erhöhtem Risiko, dass Nutzen und Skalierbarkeit weniger belastbar nachweisbar sind | Tragfähige Kompromissvariante | Größte Aussagekraft und beste Grundlage für Anschlussprojekt |
+| **Technische Stabilisierung und Bug-Fixing<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"90693dc4-f050-48da-ae2b-1c8b5915ce31"}' -->** | Enthalten, aber mit reduziertem Gesamtaufwand<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"90693dc4-f050-48da-ae2b-1c8b5915ce31"}' --> | Enthalten<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"90693dc4-f050-48da-ae2b-1c8b5915ce31"}' --> | Enthalten<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"90693dc4-f050-48da-ae2b-1c8b5915ce31"}' --> |
+| **Risiko / fachliche Einordnung<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"6fd50622-ea63-4832-ad2b-e3a80a9e01ef"}' -->** | Schlanke Mindestvariante mit erhöhtem Risiko, dass Nutzen und Skalierbarkeit weniger belastbar nachweisbar sind<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"6fd50622-ea63-4832-ad2b-e3a80a9e01ef"}' --> | Tragfähige Kompromissvariante<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"6fd50622-ea63-4832-ad2b-e3a80a9e01ef"}' --> | Größte Aussagekraft und beste Grundlage für Anschlussprojekt<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"6fd50622-ea63-4832-ad2b-e3a80a9e01ef"}' --> |
 <!-- adf:table attrs='{"width":760}' -->
 
 ### 4.6 Abgrenzung
@@ -178,9 +181,9 @@ Review von Systemarchitektur und Entscheidungslogik, Integration zentraler Logik
 **Meilenstein 2: KIWo grundsätzlich nutzbar**
 
 **P3 – Begleitete Tests und Weiterentwicklung, ca. Monat 3 bis 4**  
-Begleitete Nutzertests, Feedback aus Verwaltung und Beratungsstellen, Auswertung der Rückmeldungen, fachliche Nachschärfungen, technische Weiterentwicklung und Sicherheitsprüfung vor breiterer Nutzung.  
+Begleitete Nutzertests, Feedback aus Verwaltung und Beratungsstellen, Auswertung der Rückmeldungen, fachliche Nachschärfungen, technische Weiterentwicklung sowie variantenspezifische externe Sicherheitsprüfung (Sicherheitscheck bzw. Penetrationstest gemäß Kapitel 4) vor breiterer Nutzung.  
 **Meilenstein 3: Begleitete Tests ausgewertet und System weiterentwickelt**  
-**Meilenstein 4: Sicherheitsprüfung vor breiterer Nutzung abgeschlossen**
+**Meilenstein 4: Externe Sicherheitsprüfung vor breiterer Nutzung abgeschlossen**
 
 **P4 – Stabilisierung und Onboarding, ca. Monat 5**  
 Nacharbeiten aus den begleiteten Tests, Bug-Fixes, Stabilisierung der Systemversion und Vorbereitung der Testgruppen. In dieser Phase werden grundsätzlich keine neuen Kernfunktionen aufgenommen.  
@@ -194,26 +197,26 @@ Durchführung des Testbetriebs, Bearbeitung akuter technischer Probleme, Sammlun
 
 Die Auszahlung erfolgt meilensteinbezogen. Die genaue Ausgestaltung der Zahlungsmeilensteine wird nach Auswahl der Leistungsvariante gemeinsam festgelegt. Die folgende Struktur dient als Vorschlag für eine nachvollziehbare Auszahlung entlang prüfbarer Projektstände.
 
-| Zahlungszeitpunkt<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"8332c810-c6b0-4f51-bd58-70bef1252c91"}' --> | Nachweisbarer Auslöser<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"8332c810-c6b0-4f51-bd58-70bef1252c91"}' --> | Anteil<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"8332c810-c6b0-4f51-bd58-70bef1252c91"}' --> |
+| Zahlungszeitpunkt | Nachweisbarer Auslöser | Anteil |
 | -------- | -------- | -------- |
-| **Projektstart<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"8332c810-c6b0-4f51-bd58-70bef1252c91"}' -->** | Beauftragung erfolgt; Projekt ist organisatorisch gestartet und die Konzeptionsphase beginnt.<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"8332c810-c6b0-4f51-bd58-70bef1252c91"}' --> | **25 %<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"8332c810-c6b0-4f51-bd58-70bef1252c91"}' -->** |
-| **Konzeptionsgrundlage abgestimmt<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"8332c810-c6b0-4f51-bd58-70bef1252c91"}' -->** | Systemarchitektur, fachliche Entscheidungslogik, Nutzerfluss, Datenschutz-/Compliance-Grundlagen und UX-Grundlage liegen als abgestimmter Arbeitsstand vor.<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"8332c810-c6b0-4f51-bd58-70bef1252c91"}' --> | **20 %<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"8332c810-c6b0-4f51-bd58-70bef1252c91"}' -->** |
-| **KIWo grundsätzlich nutzbar<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"8332c810-c6b0-4f51-bd58-70bef1252c91"}' -->** | Zentrale Logikbestandteile sind integriert; ein lauffähiger KIWo-Stand kann demonstriert und für begleitete Tests genutzt werden.<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"8332c810-c6b0-4f51-bd58-70bef1252c91"}' --> | **25 %<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"8332c810-c6b0-4f51-bd58-70bef1252c91"}' -->** |
-| **Breiterer Testbetrieb vorbereitet<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"8332c810-c6b0-4f51-bd58-70bef1252c91"}' -->** | Begleitete Tests wurden ausgewertet, wesentliche Nacharbeiten umgesetzt, Sicherheitsprüfung abgeschlossen und Onboarding-Unterlagen/Testgruppen-Setup vorbereitet.<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"8332c810-c6b0-4f51-bd58-70bef1252c91"}' --> | **20 %<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"8332c810-c6b0-4f51-bd58-70bef1252c91"}' -->** |
-| **Projekt abgeschlossen<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"8332c810-c6b0-4f51-bd58-70bef1252c91"}' -->** | Testbetrieb, Evaluation und Abschlussdokumentation sind abgeschlossen; die Ergebnisse sind für die Bewertung von Nutzen, Machbarkeit und Skalierung aufbereitet.<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"8332c810-c6b0-4f51-bd58-70bef1252c91"}' --> | **10 %<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"8332c810-c6b0-4f51-bd58-70bef1252c91"}' -->** |
+| **Projektstart** | Beauftragung erfolgt; Projekt ist organisatorisch gestartet und die Konzeptionsphase beginnt. | **25 %** |
+| **Konzeptionsgrundlage abgestimmt** | Systemarchitektur, fachliche Entscheidungslogik, Nutzerfluss, Datenschutz-/Compliance-Grundlagen und UX-Grundlage liegen als abgestimmter Arbeitsstand vor. | **20 %** |
+| **KIWo grundsätzlich nutzbar** | Zentrale Logikbestandteile sind integriert; ein lauffähiger KIWo-Stand kann demonstriert und für begleitete Tests genutzt werden. | **25 %** |
+| **Breiterer Testbetrieb vorbereitet** | Begleitete Tests wurden ausgewertet, wesentliche Nacharbeiten umgesetzt, externe Sicherheitsprüfung (gemäß gewählter Variante) abgeschlossen und Onboarding-Unterlagen/Testgruppen-Setup vorbereitet. | **20 %** |
+| **Projekt abgeschlossen** | Testbetrieb, Evaluation und Abschlussdokumentation sind abgeschlossen; die Ergebnisse sind für die Bewertung von Nutzen, Machbarkeit und Skalierung aufbereitet. | **10 %** |
 <!-- adf:table attrs='{"width":760}' -->
 
 ### 5.3 Qualitätssicherung und Projektorganisation
 
-Die Qualitätssicherung im Projekt KIWo 2.0 verfolgt das Ziel, die fachliche Korrektheit, technische Stabilität, Sicherheit und Nutzbarkeit des Systems über den gesamten Projektverlauf hinweg systematisch abzusichern. Sie ist als kontinuierlicher, projektbegleitender Prozess angelegt und orientiert sich an den Vorgaben des V-Modell XT.<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"0e3b0606-6a3e-4a41-8286-02713e610306"}' -->
+Die Qualitätssicherung im Projekt KIWo 2.0 verfolgt das Ziel, die fachliche Korrektheit, technische Stabilität, Sicherheit und Nutzbarkeit des Systems über den gesamten Projektverlauf hinweg systematisch abzusichern. Sie ist als kontinuierlicher, projektbegleitender Prozess angelegt und orientiert sich an den Vorgaben des V-Modell XT.
 
-Auf technischer Ebene umfasst die Qualitätssicherung insbesondere systematische Code-Reviews, automatisierte Tests sowie ein fortlaufendes Schwachstellen-Screening. Ergänzend wird vor der breiteren Nutzung ein externer Penetrationstest durchgeführt, einschließlich eines Re-Tests zur Verifikation der behobenen Findings. Damit wird sichergestellt, dass identifizierte Schwachstellen nicht nur dokumentiert, sondern auch nachweislich geschlossen werden.<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"0e3b0606-6a3e-4a41-8286-02713e610306"}' -->
+Auf technischer Ebene umfasst die Qualitätssicherung insbesondere systematische Code-Reviews, automatisierte Tests sowie ein fortlaufendes Schwachstellen-Screening. Ergänzend wird vor der breiteren Nutzung eine externe Sicherheitsprüfung durchgeführt; deren Tiefe richtet sich nach der gewählten Variante (fokussierter Sicherheitscheck im Mindest- und Kernumfang, vollständiger Penetrationstest im Vollumfang bzw. optional im Kernumfang gegen Aufpreis, siehe Kapitel 4). In allen Fällen ist ein Re-Test zur Verifikation der behobenen Findings vorgesehen, sodass identifizierte Schwachstellen nicht nur dokumentiert, sondern auch nachweislich geschlossen werden.
 
-Auf fachlicher und nutzerorientierter Ebene wird die Qualitätssicherung durch die Begleitung der Test- und Pilotbetriebsphase ergänzt. Hierzu gehören strukturierte Nutzertests, die Einbindung von Antragstellenden, Mitarbeitenden der Verwaltung sowie Beratungsstellen und die systematische Erhebung und Auswertung von Praxisrückmeldungen. Die so gewonnenen Erkenntnisse fließen unmittelbar in die Stabilisierung und Weiterentwicklung des Systems ein.<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"0e3b0606-6a3e-4a41-8286-02713e610306"}' -->
+Auf fachlicher und nutzerorientierter Ebene wird die Qualitätssicherung durch die Begleitung der Test- und Pilotbetriebsphase ergänzt. Hierzu gehören strukturierte Nutzertests, die Einbindung von Antragstellenden, Mitarbeitenden der Verwaltung sowie Beratungsstellen und die systematische Erhebung und Auswertung von Praxisrückmeldungen. Die so gewonnenen Erkenntnisse fließen unmittelbar in die Stabilisierung und Weiterentwicklung des Systems ein.
 
-Risiken werden im Rahmen des Projektmanagements fortlaufend identifiziert, bewertet und gemeinsam mit der Universitätsstadt Tübingen abgestimmt. Eine ausführliche und variantenspezifische Ausarbeitung der konkreten Qualitätssicherungsmaßnahmen sowie des Risikomanagements erfolgt im Rahmen der Projektinitialisierungsphase und wird Bestandteil des Projekthandbuchs. Dieses Vorgehen entspricht den Vorgaben des V-Modell XT und stellt sicher, dass Maßnahmen und Risikobewertung passgenau auf die mit der Universitätsstadt Tübingen abgestimmte Variante zugeschnitten werden.<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"0e3b0606-6a3e-4a41-8286-02713e610306"}' -->
+Risiken werden im Rahmen des Projektmanagements fortlaufend identifiziert, bewertet und gemeinsam mit der Universitätsstadt Tübingen abgestimmt. Eine ausführliche und variantenspezifische Ausarbeitung der konkreten Qualitätssicherungsmaßnahmen sowie des Risikomanagements erfolgt im Rahmen der Projektinitialisierungsphase und wird Bestandteil des Projekthandbuchs. Dieses Vorgehen entspricht den Vorgaben des V-Modell XT und stellt sicher, dass Maßnahmen und Risikobewertung passgenau auf die mit der Universitätsstadt Tübingen abgestimmte Variante zugeschnitten werden.
 
-Die Projektleitung ist in Tübingen ansässig und steht der Universitätsstadt als örtliche Schnittstelle zur Verfügung. Systemarchitektur, Qualitätssicherung und Entwicklung sind in Köln kolokiert. Externe Spezialisten werden in den Bereichen UX-Design, Datenschutz, IT-Sicherheit und KI-Recht eingebunden. Eine ausführliche Beschreibung der Rollen und Verantwortlichkeiten gemäß V-Modell XT wird im Projekthandbuch zu Projektbeginn vorgelegt.<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"0e3b0606-6a3e-4a41-8286-02713e610306"}' -->
+Die Projektleitung ist in Tübingen ansässig und steht der Universitätsstadt als örtliche Schnittstelle zur Verfügung. Systemarchitektur, Qualitätssicherung und Entwicklung sind in Köln kolokiert. Externe Spezialisten werden in den Bereichen UX-Design, Datenschutz, IT-Sicherheit und KI-Recht eingebunden. Eine ausführliche Beschreibung der Rollen und Verantwortlichkeiten gemäß V-Modell XT wird im Projekthandbuch zu Projektbeginn vorgelegt.
 
 ### 5.4 Mitwirkung der Universitätsstadt Tübingen
 
@@ -227,9 +230,9 @@ Die Mitwirkung dient dazu, KIWo 2.0 realitätsnah an der Verwaltungspraxis auszu
 
 ---
 
-## 6 Preise und Vertragsbedingungen<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"77ad7cd3-03bb-4939-ad26-7647dbdf4d08"}' -->
+## 6 Preise und Vertragsbedingungen
 
-Die in Kapitel 4 ausgewiesenen Preise verstehen sich brutto einschließlich der gesetzlichen Mehrwertsteuer in Höhe von 19 Prozent und umfassen sämtliche zur Leistungserbringung erforderlichen Aufwendungen, insbesondere Personalkosten des internen Projektteams, Honorare und Werkvertragsleistungen externer Spezialisten, Aufwendungen für den externen Penetrationstest, Hosting- und Betriebskosten der Cloud-Infrastruktur während der vereinbarten Projektlaufzeit, Nutzungskosten der eingesetzten KI-Modelle sowie Reise- und Sachkosten. Der Angebotspreis gilt als Festpreis für die gesamte Projektlaufzeit.
+Die in Kapitel 4 ausgewiesenen Preise verstehen sich brutto einschließlich der gesetzlichen Mehrwertsteuer in Höhe von 19 Prozent und umfassen sämtliche zur Leistungserbringung erforderlichen Aufwendungen, insbesondere Personalkosten des internen Projektteams, Honorare und Werkvertragsleistungen externer Spezialisten, Aufwendungen für die variantenspezifische externe Sicherheitsprüfung (Sicherheitscheck bzw. Penetrationstest gemäß Kapitel 4), Hosting- und Betriebskosten der Cloud-Infrastruktur während der vereinbarten Projektlaufzeit, Nutzungskosten der eingesetzten KI-Modelle sowie Reise- und Sachkosten. Der Angebotspreis gilt als Festpreis für die gesamte Projektlaufzeit.
 
 **Zahlungsbedingungen:** Die Abrechnung erfolgt auf Grundlage der in Abschnitt 5.2 dargestellten meilensteinbezogenen Zahlungslogik. Die konkrete Verteilung der Teilzahlungen wird zu Projektbeginn gemeinsam mit der Universitätsstadt Tübingen festgelegt und an den verabschiedeten Projektplan angepasst. Das Zahlungsziel beträgt 30 Tage ab Rechnungsstellung.
 
