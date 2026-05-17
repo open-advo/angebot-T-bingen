@@ -54,7 +54,7 @@ Die Projektlaufzeit beträgt je nach gewählter Leistungsvariante voraussichtlic
 | **Mindestumfang** | Fokussierte Weiterentwicklung der zentralen KIWo-Grundfunktionen mit einmonatigem Testbetrieb. Die Variante ermöglicht eine abgesicherte Fortführung des Projekts, setzt aber bei Integrationsperspektive, Smartphone-Optimierung und dynamischem Antragsaufbau bewusst auf optionale Bestandteile. Sie eignet sich damit vor allem für eine begrenzte Weiterentwicklung mit kontrolliertem Kostenrahmen. | **50.045,00 €** |
 | **Kernumfang** | Ausgewogener Leistungsumfang für eine substanzielle Weiterentwicklung und realitätsnahe Pilotierung. Enthalten sind insbesondere Plausibilitäts- und Vollständigkeitsprüfung, Anschlussfähigkeit an bestehende Verwaltungsinfrastruktur, nutzerzentrierte UX-Optimierung, Smartphone-Optimierung und einmonatiger Testbetrieb. Die Stadt entscheidet sich damit für eine belastbare Kernvariante, die zentrale Entwicklungs- und Erkenntnisziele abdeckt, ohne den maximalen Vollumfang zu beauftragen. | **55.131,00 €** |
 | **Vollumfang** | Umfassendste Variante mit erweitertem Pilotierungs- und Skalierungsanspruch. Zusätzlich zum gemeinsamen Leistungsumfang umfasst sie insbesondere vertiefte UX-Konzeption, vollständige externe UX-Begleitung, umfassende Plausibilitäts- und Vollständigkeitsprüfung, dynamischen Antragsaufbau auf Law-as-Code-Basis, sowie einen zweimonatigen Testbetrieb mit regelmäßiger Vor-Ort-Begleitung durch das Entwicklungsteam. Die Stadt entscheidet sich damit für die Variante mit der höchsten Aussagekraft für Verstetigung, Integration und mögliche Skalierung. | **73.840,00 €** |
-<!-- adf:table attrs='{"width":760}' -->
+
 
 Die ausführliche Beschreibung der enthaltenen Leistungen findet sich in Kapitel 4.
 
@@ -96,7 +96,7 @@ Folgende Leistungen sind in allen drei Varianten gleichermaßen enthalten:
 - **Digitale Vorprüfung mit Anspruchsindikation** als unterstützende, ausdrücklich nicht rechtsverbindliche Einschätzung.
 - **KI-gestützte Unterstützung im Antragsprozess**, insbesondere bei Eingaben, Spracheingabe, Verständnisfragen, dem Hochladen von Nachweisen sowie bei typischen Unsicherheiten während der Antragstellung.
 - **Automatisierte Auswertung hochgeladener Nachweise** mit Extraktion relevanter Angaben und strukturierter Übernahme ausgewählter Daten in den Antrag.
-- **Datenschutz-, Sicherheits- und Compliance-Leistungen**, insbesondere DSGVO-Grundkonzept, Prüfung der Konformität mit der EU-KI-Verordnung, Schwachstellen-Screening sowie ein fokussierter externer Sicherheitscheck vor breiterer Nutzung zur Identifikation und Priorisierung zentraler Risiken.<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"b589faba-4c38-4e1a-9b55-08beb0532c02"}' -->
+- **Datenschutz-, Sicherheits- und Compliance-Leistungen**, insbesondere DSGVO-Grundkonzept, Prüfung der Konformität mit der EU-KI-Verordnung, Schwachstellen-Screening sowie ein fokussierter externer Sicherheitscheck vor breiterer Nutzung zur Identifikation und Priorisierung zentraler Risiken.
 - **Technische Stabilisierung und Fehlerbehebung** während der Test- und Nutzungsphase.
 - **Evaluation und Abschlussdokumentation**, einschließlich Erhebung und Auswertung von Evaluationsdaten sowie Bewertung von Nutzen, Machbarkeit und Skalierungspotenzial.
 - **Roll-out-Perspektive für eine Anschlussphase**, einschließlich zeitlich unbegrenzter Nutzungsmöglichkeit der entwickelten KIWo-Version ohne zusätzliche Lizenzgebühren an OpenAdvo UG; laufende Betriebs- und Folgekosten sind hiervon nicht umfasst.
@@ -105,7 +105,7 @@ Folgende Leistungen sind in allen drei Varianten gleichermaßen enthalten:
 
 Zusätzlich zum gemeinsamen Leistungsumfang umfasst die Variante **Mindestumfang**:
 
-- **Vereinfachte Plausibilitäts- und Vollständigkeitsprüfung** mit Hinweisen zu fehlenden, unplausiblen oder widersprüchlichen Angaben.
+- **Vereinfachte Plausibilitäts- und Vollständigkeitsprüfung** zentraler Pflichtangaben und offensichtlicher Widersprüche, mit Fokus auf häufige Standardfälle und formale Mindestvollständigkeit.
 - **UX-Konzeption und nutzerzentrierte Optimierung** mit grundlegender Schritt-für-Schritt-Führung durch den Wohngeldantrag.
 - **Begleitendes externes UX-Review** als ergänzende Qualitätssicherungsmaßnahme.
 - **Testbetrieb mit einmonatiger Laufzeit** unter Beteiligung von Antragstellenden, Mitarbeitenden der Verwaltung sowie Beratungsstellen, einschließlich begleiteter Nutzertests und strukturierter Praxisrückmeldungen.
@@ -115,12 +115,12 @@ Zusätzlich zum gemeinsamen Leistungsumfang umfasst die Variante **Mindestumfang
 
 Zusätzlich zum gemeinsamen Leistungsumfang umfasst die Variante **Kernumfang**:
 
-- **Plausibilitäts- und Vollständigkeitsprüfung** mit Hinweisen zu fehlenden, unplausiblen oder widersprüchlichen Angaben.
+- **Plausibilitäts- und Vollständigkeitsprüfung** zentraler Antragsangaben und typischer Nachweiskonstellationen, einschließlich Hinweisen auf fehlende, unplausible oder widersprüchliche Angaben in relevanten Standardfällen.
 - **Anschlussfähigkeit an die bestehende Verwaltungsinfrastruktur**, insbesondere an Fachverfahren — beispielsweise über FIT-Connect oder DiWo.
 - **UX-Konzeption und nutzerzentrierte Optimierung** mit nutzerfreundlicher Schritt-für-Schritt-Führung durch den Wohngeldantrag.
 - **Begleitendes externes UX-Review** als ergänzende Qualitätssicherungsmaßnahme.
 - **Smartphone-optimierte Nutzeroberfläche**, sodass der Antragsprozess auch über ein Smartphone durchlaufen werden kann.
-- **Vereinfachter dynamischer Antragsaufbau** für zentrale Standardfälle, einschließlich regelbasierter Nutzerführung; eine vollständige Law-as-Code-Abbildung mit umfassender gesetzlicher Referenzierung ist dem Vollumfang vorbehalten.
+- **Vereinfachte intelligente Antragsoptimierung** für zentrale Standardfälle, einschließlich regelbasierter Nutzerführung und einer zielgerichteten Reduzierung nicht relevanter Eingabeschritte.
 - **Testbetrieb mit einmonatiger Laufzeit** unter Beteiligung von Antragstellenden, Mitarbeitenden der Verwaltung sowie Beratungsstellen, einschließlich begleiteter Nutzertests und strukturierter Praxisrückmeldungen.
 - **Punktuelle Begleitung vor Ort in Tübingen** durch das Kölner Entwicklungsteam, einschließlich Systemdemonstrationen und fachlichen Austauschs.
 - **Optionaler professioneller Penetrationstest gegen 5.727 € (inkl. MwSt.) Aufpreis:** Erweiterung des vorgesehenen fokussierten Sicherheitschecks zu einem vollständigen externen Penetrationstest mit vertiefter Prüfung, Findings-Dokumentation und Maßnahmenempfehlungen.
@@ -129,12 +129,12 @@ Zusätzlich zum gemeinsamen Leistungsumfang umfasst die Variante **Kernumfang**:
 
 Zusätzlich zum gemeinsamen Leistungsumfang umfasst die Variante **Vollumfang**:
 
-- **Umfassende Plausibilitäts- und Vollständigkeitsprüfung** mit Hinweisen zu fehlenden, unplausiblen oder widersprüchlichen Angaben.
+- **Umfassende Plausibilitäts- und Vollständigkeitsprüfung**von Antragsangaben, Nachweisen und typischen Haushaltskonstellationen, einschließlich kontextbezogener Hinweise zu fehlenden, unplausiblen oder widersprüchlichen Angaben.
 - **Anschlussfähigkeit an die bestehende Verwaltungsinfrastruktur**, insbesondere an Fachverfahren — beispielsweise über FIT-Connect oder DiWo. Die Integrationsperspektive umfasst Formularmanagement-Systeme, FIT-Connect, DiWo, XÖV-Mapping sowie E-Akten- und Dokumentenmanagement-Systeme.
 - **Vertiefte UX-Konzeption und nutzerzentrierte Optimierung** mit einer verständlichen Schritt-für-Schritt-Führung durch den Wohngeldantrag.
 - **Externe UX-Begleitung im vollen Umfang** gemäß der ursprünglichen Projektplanung.
 - **Smartphone-optimierte Nutzeroberfläche**, sodass der gesamte Antragsprozess übersichtlich auf einem Smartphone durchlaufen werden kann.
-- **Dynamischer Antragsaufbau auf Basis eines Law-as-Code-Ansatzes** zur Reduzierung der Bearbeitungszeit. Die fachliche Zielrichtung umfasst die Abbildung relevanter Bestimmungen des Wohngeldgesetzes als ausführbare Logik, eine Echtzeit-Vorprüfung, eine erklärbare Verarbeitung sowie eine nachvollziehbare Referenzierung auf einschlägige Gesetzespassagen.
+- **Intelligente Antragsoptimierung** zur Reduzierung der Bearbeitungszeit und Verbesserung des Antragsdurchlaufs. Die Umsetzung umfasst eine kontextbezogene Nutzerführung, die relevante Eingabeschritte priorisiert und nicht einschlägige Fragen soweit möglich ausblendet.
 - **Testbetrieb mit zweimonatiger Laufzeit** unter Beteiligung von Antragstellenden, Mitarbeitenden der Verwaltung sowie Beratungsstellen, einschließlich begleiteter Nutzertests und strukturierter Praxisrückmeldungen.
 - **Regelmäßige Begleitung vor Ort in Tübingen** durch das Kölner Entwicklungsteam, einschließlich Systemdemonstrationen, persönlicher Abstimmungen und fachlichen Austauschs.
 - **Professioneller Penetrationstest:** Erweiterung des vorgesehenen fokussierten Sicherheitschecks zu einem vollständigen externen Penetrationstest mit vertiefter Prüfung, Findings-Dokumentation und Maßnahmenempfehlungen.
@@ -151,11 +151,11 @@ Zusätzlich zum gemeinsamen Leistungsumfang umfasst die Variante **Vollumfang**:
 | **Externe UX-Begleitung** | Review-/ratgebende Funktion | Review-/ratgebende Funktion | Mitgestaltende Funktion |
 | **Smartphone-optimierte Nutzung** | Nicht enthalten | Enthalten | Enthalten |
 | **Externe Sicherheitsprüfung** | Sicherheitscheck enthalten | Sicherheitscheck enthalten; professioneller Pentest optional +5.727 € (inkl. MwSt.) | Professioneller Pentest enthalten |
-| **Dynamischer Antragsaufbau / Law-as-Code-Optimierung** | Nicht enthalten | Vereinfacht enthalten | Enthalten |
+| **Intelligente Antragsoptimierung** | Nicht enthalten | Vereinfacht enthalten | Enthalten |
 | **Testbetrieb mit Antragstellenden, Verwaltung und Beratungsstellen** | 1 Monat | 1 Monat | 2 Monate |
 | **Vor-Ort-Besuche Entwickler-Team** | Vereinzelt | Vereinzelt | Regelmäßig |
-| **Technische Stabilisierung und Bug-Fixing<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"90693dc4-f050-48da-ae2b-1c8b5915ce31"}' -->** | Enthalten, aber mit reduziertem Gesamtaufwand<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"90693dc4-f050-48da-ae2b-1c8b5915ce31"}' --> | Enthalten<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"90693dc4-f050-48da-ae2b-1c8b5915ce31"}' --> | Enthalten<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"90693dc4-f050-48da-ae2b-1c8b5915ce31"}' --> |
-| **Risiko / fachliche Einordnung<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"6fd50622-ea63-4832-ad2b-e3a80a9e01ef"}' -->** | Schlanke Mindestvariante mit erhöhtem Risiko, dass Nutzen und Skalierbarkeit weniger belastbar nachweisbar sind<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"6fd50622-ea63-4832-ad2b-e3a80a9e01ef"}' --> | Tragfähige Kompromissvariante<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"6fd50622-ea63-4832-ad2b-e3a80a9e01ef"}' --> | Größte Aussagekraft und beste Grundlage für Anschlussprojekt<!-- adf:mark type="annotation" attrs='{"annotationType":"inlineComment","id":"6fd50622-ea63-4832-ad2b-e3a80a9e01ef"}' --> |
+| **Technische Stabilisierung und Bug-Fixing** | Enthalten, aber mit reduziertem Gesamtaufwand | Enthalten | Enthalten |
+| **Risiko / fachliche Einordnung** | Schlanke Mindestvariante mit erhöhtem Risiko, dass Nutzen und Skalierbarkeit weniger belastbar nachweisbar sind | Tragfähige Kompromissvariante | Größte Aussagekraft und beste Grundlage für Anschlussprojekt |
 <!-- adf:table attrs='{"width":760}' -->
 
 ### 4.6 Abgrenzung
@@ -238,13 +238,13 @@ Die in Kapitel 4 ausgewiesenen Preise verstehen sich brutto einschließlich der 
 
 **Gültigkeit des Angebots:** Das Angebot ist 30 Tage ab Angebotsdatum gültig.
 
-**Vertragsgrundlage:** Als Vertragsgrundlage wird der EVB-IT Erstellungsvertrag AGIL vorgeschlagen, da Gegenstand des Vorhabens die Erstellung einer abnahmefähigen Weiterentwicklung von KIWo mit Werkscharakter ist und die Leistungserbringung gemäß Kapitel 5 in iterativen Entwicklungs- und Abstimmungsschleifen mit fachlichen Nachschärfungen aus Test- und Praxisrückmeldungen erfolgt. Alternative Vertragsformen können auf Wunsch der Universitätsstadt Tübingen geprüft und im gegenseitigen Einvernehmen vereinbart werden.
+**Vertragsgrundlage:** Als Vertragsgrundlage wird der EVB-IT Erstellungsvertrag vorgeschlagen, da Gegenstand des Vorhabens die Erstellung einer abnahmefähigen Weiterentwicklung von KIWo mit Werkscharakter ist und die Leistungserbringung gemäß Kapitel 5 in iterativen Entwicklungs- und Abstimmungsschleifen mit fachlichen Nachschärfungen aus Test- und Praxisrückmeldungen erfolgt. Alternative Vertragsformen können auf Wunsch der Universitätsstadt Tübingen geprüft und im gegenseitigen Einvernehmen vereinbart werden.
 
 **Auftragsverarbeitung:** Für das Vorhaben wird zwischen der Universitätsstadt Tübingen und der OpenAdvo UG (haftungsbeschränkt) eine neue Vereinbarung zur Auftragsverarbeitung gemäß Art. 28 DSGVO geschlossen, die den erweiterten Leistungsumfang von KIWo 2.0, die einzubeziehenden Datenkategorien, die eingesetzten KI-Modelle sowie die beteiligten Subunternehmer berücksichtigt. Der Abschluss erfolgt vor Beginn der Verarbeitung personenbezogener Daten im Rahmen des Folgeprojekts.
 
-**Gewährleistung:** Für die erbrachten Werkleistungen gelten die gesetzlichen Gewährleistungsregelungen sowie ergänzend die Regelungen des EVB-IT Erstellungsvertrags AGIL. Die Gewährleistungsfrist beträgt 24 Monate ab erfolgter Abnahme der jeweiligen Leistung.
+**Gewährleistung:** Für die erbrachten Werkleistungen gelten die gesetzlichen Gewährleistungsregelungen sowie ergänzend die Regelungen des EVB-IT Erstellungsvertrags. Die Gewährleistungsfrist beträgt 24 Monate ab erfolgter Abnahme der jeweiligen Leistung.
 
-**Nutzungsrechte:** Die Universitätsstadt Tübingen erhält an den im Rahmen des Vorhabens erbrachten Werkleistungen ein einfaches, nicht übertragbares und nicht unterlizenzierbares, zeitlich und örtlich unbeschränktes Nutzungsrecht für eigene behördliche Zwecke im Kontext der Wohngeldbearbeitung. Die Nutzung der entwickelten KIWo-Version erfolgt ohne zusätzliche Lizenzgebühren oder nutzungsabhängige Abgaben an die OpenAdvo UG; laufende Betriebs-, Hosting-, Wartungs-, Support- und Weiterentwicklungsleistungen sind hiervon nicht umfasst und werden bei Bedarf gesondert vereinbart. Die Rechte an bereits bestehenden KIWo-Standardkomponenten sowie an von Dritten beigesteuerten Komponenten verbleiben bei der OpenAdvo UG beziehungsweise den jeweiligen Rechteinhabern; die Universitätsstadt Tübingen erhält hierfür ein einfaches Nutzungsrecht im vereinbarten Einsatzkontext. Soweit Open-Source-Komponenten enthalten sind, gelten ergänzend die jeweiligen Lizenzbedingungen der Komponenten. Eine Bearbeitung, Dekompilierung oder Weitergabe an Dritte ist nicht Bestandteil des eingeräumten Nutzungsrechts; weitergehende Rechte können auf Wunsch der Universitätsstadt Tübingen gesondert vereinbart werden.
+**Nutzungsrechte:** Die Universitätsstadt Tübingen erhält an den im Rahmen des Vorhabens erbrachte vertragliche Leistung ein einfaches, nicht übertragbares und nicht unterlizenzierbares, zeitlich und örtlich unbeschränktes Nutzungsrecht für eigene behördliche Zwecke im Kontext der Wohngeldbearbeitung. Die Nutzung der entwickelten KIWo-Version erfolgt ohne zusätzliche Lizenzgebühren an die OpenAdvo UG; laufende Betriebs-, Hosting-, Wartungs-, Support- und Weiterentwicklungsleistungen sind hiervon nicht umfasst und werden bei Bedarf gesondert vereinbart. Die Rechte an bereits bestehenden KIWo-Standardkomponenten sowie an von Dritten beigesteuerten Komponenten verbleiben bei der OpenAdvo UG beziehungsweise den jeweiligen Rechteinhabern; die Universitätsstadt Tübingen erhält hierfür ein einfaches Nutzungsrecht im vereinbarten Einsatzkontext. Soweit Open-Source-Komponenten enthalten sind, gelten ergänzend die jeweiligen Lizenzbedingungen der Komponenten. Eine Bearbeitung, Dekompilierung oder Weitergabe an Dritte ist nicht Bestandteil des eingeräumten Nutzungsrechts; weitergehende Rechte können auf Wunsch der Universitätsstadt Tübingen gesondert vereinbart werden.
 
 ---
 
